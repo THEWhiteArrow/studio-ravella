@@ -1,0 +1,28 @@
+{
+  "name": "ravella-studio",
+  "version": "1.0.0",
+  "description": "Studio Ravella's website project",
+  "main": "index.js",
+  "dependencies": {
+    "autoprefixer": "^10.3.1",
+    "parcel-bundler": "^1.12.5",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+   "dev": "parcel ./src/index.html",
+   "build": "parcel build ./src/index.html"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/THEWhiteArrow/studio-ravella.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/THEWhiteArrow/studio-ravella/issues"
+  },
+  "homepage": "https://github.com/THEWhiteArrow/studio-ravella#readme"
+}

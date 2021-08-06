@@ -13,14 +13,14 @@ const setUpNavbar = (() => {
             // window.scroll(0, 0);
             // document.body.style.overflowY = "hidden";
             toggable.classList.remove('nav-toggable-hidden')
-            togglerDivs[0].classList.add('translate-y-1', 'rotate-45');
+            togglerDivs[0].classList.add('translate-y-2', 'rotate-45');
             togglerDivs[1].classList.add('-translate-x-4', 'scale-0');
             togglerDivs[2].classList.add('-translate-y-2', '-rotate-45');
 
          } else {
             // document.body.style.overflowY = "auto";
             toggable.classList.add('nav-toggable-hidden')
-            togglerDivs[0].classList.remove('translate-y-1', 'rotate-45');
+            togglerDivs[0].classList.remove('translate-y-2', 'rotate-45');
             togglerDivs[1].classList.remove('-translate-x-4', 'scale-0');
             togglerDivs[2].classList.remove('-translate-y-2', '-rotate-45');
 

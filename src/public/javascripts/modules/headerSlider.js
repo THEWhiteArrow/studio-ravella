@@ -39,6 +39,7 @@ const setUpHeader = (() => {
    const manageDots = (i) => {
       dotElements.forEach(el => {
          el.classList.remove('bg-red-600');
+         el.classList.add('bg-red-200');
       })
       dotElements[i].classList.add('bg-red-600');
    }
@@ -74,10 +75,34 @@ const setUpHeader = (() => {
       <div class="dotElement hover:bg-red-400 transition-all w-4 h-4 mx-1 rounded-full border border-gray-900"></div>
       `
       const dotContainer = `
-      <div class="absolute dotContainer flex" >
-      ${dotElement.repeat(imgs.length)};
+     
+         
+
+         <div class="z-50 absolute dotContainer flex flex-col" >
+         
+            <a href="#welcome"
+            class="hidden md:block z-50 mb-10  transform-gpu  origin-center transition-all hover:scale-105">
+            <div id="wrapper">
+               <div id="wrapper-inner">
+                  <div id="scroll-down">
+                     <span class="arrow-down">
+                        <!-- css generated icon -->
+                     </span>
+                     <span id="scroll-title">
+                        Scroll down
+                     </span>
+                  </div>
+               </div>
+            </div>
+         </a>
+         <div class="flex flex-row justify-center ">
+         
+         ${dotElement.repeat(imgs.length)};
+         
+         </div>
+         </div>
       
-      </div>
+      
       `
       header.innerHTML += dotContainer;
 

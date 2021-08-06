@@ -11,16 +11,17 @@
 
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+      rel="stylesheet">
 
    <link rel="stylesheet" href="./public/stylesheets/tailwind.css">
    <link rel="stylesheet" href="./public/stylesheets/app.css">
 </head>
 
-<body class="bg-gray-800 border-body border-red-600">
+<body class="bg-black-800 border-body border-red-600">
 
 
-   <nav class="bg-gray-900 py-4 border-body border-red-600">
+   <nav class="bg-black-900 py-4 border-body border-red-600">
       <div class="container mx-auto  flex flex-row">
 
 
@@ -28,14 +29,14 @@
             <a class="flex-1 py-2 text-gray-200 hover:text-gray-50" href="/">Studio Ravella</a>
 
             <button id="nav-toggler" class="block md:hidden">
-               <div class="transform-gpu transition-transform m-1 w-8 h-1 bg-gray-600 rounded"></div>
-               <div class="transform-gpu transition-transform m-1 w-8 h-1 bg-gray-600 rounded"></div>
-               <div class="transform-gpu transition-transform m-1 w-8 h-1 bg-gray-600 rounded"></div>
+               <div class="transform-gpu transition-transform m-1 w-8 h-1 bg-black-600 rounded"></div>
+               <div class="transform-gpu transition-transform m-1 w-8 h-1 bg-black-600 rounded"></div>
+               <div class="transform-gpu transition-transform m-1 w-8 h-1 bg-black-600 rounded"></div>
             </button>
          </div>
 
          <div
-            class="nav-toggable-hidden absolute md:relative md:h-auto md:w-auto inset-0 h-screen w-40 bg-gray-900 transform-gpu transition-all text-lg"
+            class="nav-toggable-hidden absolute md:relative md:h-auto md:w-auto inset-0 h-screen w-40 bg-black-900 transform-gpu transition-all text-lg"
             id="nav-toggable">
 
 
@@ -45,22 +46,22 @@
                   MENU
                </li>
 
-               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 hover:bg-gray-800">
+               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 hover:bg-black-800">
                   <a class="flex-1 h-full flex items-center" href="/#kontakt">
                      Kontakt
                   </a>
                </li>
-               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 hover:bg-gray-800">
+               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 hover:bg-black-800">
                   <a class="flex-1 h-full flex items-center" href="/cennik.html">
                      Cennik
                   </a>
                </li>
-               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 hover:bg-gray-800">
+               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 hover:bg-black-800">
                   <a class="flex-1 h-full flex items-center" href="#">
                      O nas
                   </a>
                </li>
-               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 hover:bg-gray-800">
+               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 hover:bg-black-800">
                   <a class="flex-1 h-full flex items-center" href="/galeria.html">
                      Galeria
                   </a>
@@ -73,6 +74,7 @@
    </nav>
 
    <div class="navbarSpaceFiller"></div>
+
 
    <header class="bg-red-100 relative  ">
 
@@ -87,7 +89,7 @@
             src="public/assets/img/pom_2_1.jpg" alt="">
       </div>
 
-      <div>
+      <div class="hidden md:block">
          <button id="slider-right" class="z-50 transition-transform slider absolute top-1/2">
             <div class="transform rotate-45 m-1 mb-2 w-5 h-1 rounded"></div>
             <div class="transform -rotate-45 m-1 mt-2 w-5 h-1 rounded"></div>
@@ -102,27 +104,26 @@
 
 
 
-      <div id="slider-data" class=" p-5 rounded-lg z-50 absolute">
-         <h1 class="text-shadow text-red-600 font-black text-8xl">Studio Ravella</h1>
-         <h3 class="text-shadow text-white font-bold text-xl">Miejsce, w którym wypoczniesz i poczujesz się jak młody
+      <div id="slider-data" class="shadow-lg p-5 rounded-lg z-50 absolute">
+         <h1 class="text-shadow text-red-600 font-bold text-6xl md:text-7xl">Studio Ravella</h1>
+         <h3 class="text-shadow text-white font-base text-lg md:text-xl">Miejsce, w którym wypoczniesz i poczujesz się
+            jak
+            młody
             bóg.</h3>
-         <a href="#welcome" class="transform-gpu  origin-center transition-all hover:scale-110">
-            <img class="bg-gray-300 rounded-full w-10 mt-10" src="./public/assets/svg/arrow-down-circle-fill.svg"
-               alt="">
-         </a>
       </div>
+
 
    </header>
 
    <main>
 
-      <section id="welcome" class="bg-gray-800 py-32 relative">
+      <section id="welcome" class="bg-black-800 py-32 relative">
 
          <div class="container py-16">
 
             <!-- <div class="mb-16 px-10 bg-red-600 flex py-4 items-center justify-between">
                <h3 class="text-base">ZAPISZ SIĘ JUŻ TERAZ, ZRÓB TEN PIERWSZY KROK</h3>
-               <a class="hover:bg-gray-900 hover:text-gray-50 p-2 border-2 border-gray-900 transition-all"
+               <a class="hover:bg-black-900 hover:text-gray-50 p-2 border-2 border-gray-900 transition-all"
                   href="#">ZAPISZ SIĘ</a>
             </div> -->
 
@@ -137,12 +138,12 @@
                deleniti expedita aliquam optio quo ipsa, obcaecati magni possimus nemo animi reiciendis fugit quisquam
                similique assumenda, ab sed ea dolorum! Iure.</p>
             <img src="./public/assets/svg/undraw_mindfulness_scgo.svg" alt=""
-               class="hidden md:block opacity-50  w-48  absolute top-0 mt-16 right-3/4">
+               class="opacity-50 w-24  md:w-48  absolute top-0 mt-16 right-3/4">
          </div>
 
       </section>
 
-      <section class="bg-gray-900 py-32 relative">
+      <section class="bg-black-900 py-32 relative">
          <div class="container">
 
             <h2 class="text-5xl text-red-600 text-shadow text-center">Nasze usługi</h2>
@@ -155,7 +156,7 @@
                excepturi, possimus ut modi quasi dolor hic?</p>
 
             <img src="./public/assets/svg/undraw_barber_3uel.svg" alt=""
-               class="hidden md:block opacity-50  w-48 absolute  top-0 mt-20 left-3/4">
+               class=" opacity-50 w-24 md:w-48 absolute  top-0 mt-20 left-3/4">
 
          </div>
 
@@ -166,21 +167,21 @@
             <div class="lift-on-hover my-6 card flex-shrink-0 p-3 mx-3 border-2 border-gray-500 text-center relative">
                <img loading="lazy" src="./public/assets/img/tapeta_1.JPG" alt="">
                <h4 class="text-white text-2xl mt-2 mb-5 ">Strzyżenie</h4>
-               <a class="bg-gray-900 card-link p-2 text-gray-200 hover:text-white hover:bg-red-600 border-2 border-red-600 transition-all "
+               <a class="bg-black-900 card-link p-2 text-gray-200 hover:text-white hover:bg-red-600 border-2 border-red-600 transition-all "
                   href="#">Cennik</a>
             </div>
 
             <div class="lift-on-hover my-6 card flex-shrink-0 p-3 mx-3 border-2 border-gray-500 text-center relative">
                <img loading="lazy" src="./public/assets/img/tapeta_1.JPG" alt="">
                <h4 class="text-white text-2xl mt-2 mb-5 ">Solarium</h4>
-               <a class="bg-gray-900 card-link p-2 text-gray-200 hover:text-white hover:bg-red-600 border-2 border-red-600 transition-all "
+               <a class="bg-black-900 card-link p-2 text-gray-200 hover:text-white hover:bg-red-600 border-2 border-red-600 transition-all "
                   href="#">Cennik</a>
             </div>
 
             <div class="lift-on-hover my-6 card flex-shrink-0 p-3 mx-3 border-2 border-gray-500 text-center relative">
                <img loading="lazy" src="./public/assets/img/tapeta_1.JPG" alt="">
                <h4 class="text-white text-2xl mt-2 mb-5 ">Spa</h4>
-               <a class="bg-gray-900 card-link p-2 text-gray-200 hover:text-white hover:bg-red-600 border-2 border-red-600 transition-all "
+               <a class="bg-black-900 card-link p-2 text-gray-200 hover:text-white hover:bg-red-600 border-2 border-red-600 transition-all "
                   href="#">Cennik</a>
             </div>
 
@@ -204,7 +205,7 @@
          </div>
       </section>
 
-      <section id="galeria" class="bg-gray-900 py-32 relative">
+      <section id="galeria" class="bg-black-900 py-32 relative">
          <div class="container ">
 
             <h2 class="text-5xl text-red-600 text-shadow mb-10 text-center">Galeria </h2>
@@ -216,7 +217,7 @@
             </p>
 
             <img src="./public/assets/svg/undraw_Photograph_re_up3b.svg" alt=""
-               class="hidden md:block opacity-75  w-48 absolute top-0 mt-20 right-3/4">
+               class="opacity-75 w-24 md:w-48 absolute top-0 mt-20 right-3/4">
 
             <div class="my-5 grid-gallery  grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-10">
 
@@ -240,7 +241,7 @@
                <img loading="lazy" class="grid-gallery-item hidden md:block" src="./public/assets/img/pom_1_2.JPG"
                   alt="">
 
-               <img loading="lazy" class="grid-gallery-item hidden lg:block" src="./public/assets/img/pom_1_2.JPG"
+               <!-- <img loading="lazy" class="grid-gallery-item hidden lg:block" src="./public/assets/img/pom_1_2.JPG"
                   alt="">
                <img loading="lazy" class="grid-gallery-item hidden lg:block" src="./public/assets/img/pom_1_2.JPG"
                   alt="">
@@ -251,7 +252,7 @@
                <img loading="lazy" class="grid-gallery-item hidden lg:block" src="./public/assets/img/pom_1_2.JPG"
                   alt="">
                <img loading="lazy" class="grid-gallery-item hidden lg:block" src="./public/assets/img/pom_1_2.JPG"
-                  alt="">
+                  alt=""> -->
 
 
             </div>
@@ -272,7 +273,7 @@
                excepturi, possimus ut modi quasi dolor hic?</p>
 
             <img src="./public/assets/svg/undraw_discount_d4bd.svg" alt=""
-               class="hidden md:block opacity-575  w-48 absolute  top-0 mt-20 left-3/4">
+               class="opacity-575 w-24 md:w-48 absolute  top-0 mt-20 left-3/4">
 
          </div>
 
@@ -370,7 +371,7 @@
 
       </section>
 
-      <section id="kontakt" class="bg-gray-900 py-32 relative">
+      <section id="kontakt" class="bg-black-900 py-32 relative">
          <div class="container text-center">
 
 
@@ -382,36 +383,37 @@
                aut totam nesciunt explicabo maiores? Ipsa quidem deleniti temporibus provident sint?</p>
 
             <img src="./public/assets/svg/undraw_message_sent_1030.svg" alt=""
-               class="hidden md:block opacity-50  w-48 -scale-x-100 absolute top-0 mt-16 right-3/4">
+               class="opacity-50 w-24 md:w-48 -scale-x-100 absolute top-0 mt-16 right-3/4">
 
-            <form action="" class="mt-10 needs-validation text-left flex flex-col" validate>
+            <form action="" class="border border-red-600 rounded mt-10 needs-validation text-left flex flex-col"
+               validate>
 
 
                <label for="name"
-                  class="my-2 block w-full space-y-1 text-gray-300 text-md font-semibold px-4 py-3 rounded-xl border border-red-600 transition ">
-                  <span>First name</span>
+                  class="my-2 block w-full space-y-1 text-gray-300 text-md font-semibold px-4 py-3 rounded-xl  transition ">
+                  <span>Imię i nazwisko</span>
                   <input type="text" id="name" placeholder="e.g. Jan Kowalski"
                      class="bg-gray-300 text-black w-full p-3 font-thin transition duration-200 focus:shadow-md focus:outline-none ring-offset-2 border border-gray-400 rounded-lg "
                      required>
-                  <label class="text-sm font-semibold text-gray-400">Should be atleast 5 chars long!</label>
+                  <label class="text-sm font-semibold text-gray-400">Powinno zawierać imię</label>
                </label>
                <label for="email"
-                  class="my-2 block w-full space-y-1 text-gray-300 text-md font-semibold px-4 py-3 rounded-xl border border-red-600 transition ">
+                  class="my-2 block w-full space-y-1 text-gray-300 text-md font-semibold px-4 py-3 rounded-xl  transition ">
                   <span>Email</span>
                   <input type="email" id="email" placeholder="e.g. jan.kowalski@gmail.com"
                      class="bg-gray-300 text-black w-full p-3 font-thin transition duration-200 focus:shadow-md focus:outline-none ring-offset-2 border border-gray-400 rounded-lg "
                      required>
-                  <label class="text-sm font-semibold text-gray-400">Should be atleast 5 chars long!</label>
+                  <label class="text-sm font-semibold text-gray-400">Powinien zawierać @</label>
                </label>
                <label for="message"
-                  class="my-2 block w-full space-y-1 text-gray-300 text-md font-semibold px-4 py-3 rounded-xl border border-red-600 transition ">
+                  class="my-2 block w-full space-y-1 text-gray-300 text-md font-semibold px-4 py-3 rounded-xl  transition ">
                   <span>Wiadomość</span>
                   <textarea type="text" id="message" placeholder="e.g. Witam, chciałbym się spytac o..." rows="7"
                      class="bg-gray-300 text-black w-full p-3 font-thin transition duration-200 focus:shadow-md focus:outline-none ring-offset-2 border border-gray-400 rounded-lg "></textarea>
-                  <label class="text-sm font-semibold text-gray-400" required>Should be atleast 5 chars long!</label>
+                  <label class="text-sm font-semibold text-gray-400" required>Powinno zawierać wiadomość</label>
                </label>
 
-               <button class="ml-auto p-4 text-gray-300 border bg-red-700 border-red-900 hover:bg-red-600 rounded"
+               <button class="ml-auto p-4 text-gray-300 border bg-red-700 border-red-900 hover:bg-red-600 "
                   type="submit">Prześlij</button>
 
 

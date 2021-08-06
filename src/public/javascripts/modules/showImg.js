@@ -51,10 +51,10 @@ const setUpGaleria = (() => {
          el.addEventListener('click', () => {
             const imageShow = document.createElement('section');
             imageShow.innerHTML = `
-               <section id="image-show"  style="z-index:11000;" class="fixed w-screen h-screen bg-gray-900 bg-opacity-1">
+               <section id="image-show"  style="z-index:11000;" class="fixed w-screen h-screen bg-black-900 bg-opacity-1">
                
                   <button id="image-show-close" class="mt-10 ml-10">
-                     <div class="transform-gpu transition-transform m-1 w-8 h-1 bg-red-500 rounded    translate-y-1 rotate-45"></div>
+                     <div class="transform-gpu transition-transform m-1 w-8 h-1 bg-red-500 rounded    translate-y-2 rotate-45"></div>
                      <div class="transform-gpu transition-transform m-1 w-8 h-1 bg-red-500 rounded   -translate-x-4 scale-0"></div>
                      <div class="transform-gpu transition-transform m-1 w-8 h-1 bg-red-500 rounded   -translate-y-2 -rotate-45"></div>
                   </button>
@@ -84,7 +84,7 @@ const setUpGaleria = (() => {
 
             document.getElementById('image-show-close').addEventListener('click', () => {
                imageShow.remove()
-               document.body.style.borderLeftWidth = "18px";
+               document.body.style.borderLeftWidth = document.body.style.borderRightWidth;
                document.body.style.overflowY = "auto";
             })
 

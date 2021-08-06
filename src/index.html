@@ -7,15 +7,505 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Studio Ravella</title>
 
-   <link rel="stylesheet" href="./public/stylesheets/app.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-gray-800 border-body border-red-600">
 
-   <h1>My page</h1>
-   <img src="https://source.unsplash.com/random" alt="random image">
 
-   <script src="./public/javascripts/script.js"></script>
+   <nav class="bg-gray-900 py-4 border-body border-red-600">
+      <div class="container mx-auto  flex flex-row">
+
+
+         <div class="text-2xl my-auto flex flex-1">
+            <a class="flex-1 p-2 text-gray-200 hover:text-gray-50" href="#">Studio Ravella</a>
+
+            <button id="nav-toggler" class="block sm:hidden">
+               <div class="transform-gpu transition-transform m-1 w-8 h-1 bg-gray-600 rounded"></div>
+               <div class="transform-gpu transition-transform m-1 w-8 h-1 bg-gray-600 rounded"></div>
+               <div class="transform-gpu transition-transform m-1 w-8 h-1 bg-gray-600 rounded"></div>
+            </button>
+         </div>
+
+         <div
+            class="nav-toggable-hidden absolute sm:relative sm:h-auto sm:w-auto inset-0 h-screen w-40 bg-gray-900 transform-gpu transition-all text-lg"
+            id="nav-toggable">
+
+
+            <ul class="px-3  flex flex-col sm:flex-row h-full">
+
+               <li class="p-2 pt-16 pb-8 sm:hidden flex text-gray-100  text-2xl">
+                  MENU
+               </li>
+
+               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 hover:bg-gray-800">
+                  <a class="flex-1 h-full flex items-center" href="#">
+                     Kontakt
+                  </a>
+               </li>
+               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 hover:bg-gray-800">
+                  <a class="flex-1 h-full flex items-center" href="#">
+                     Cennik
+                  </a>
+               </li>
+               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 hover:bg-gray-800">
+                  <a class="flex-1 h-full flex items-center" href="#">
+                     O nas
+                  </a>
+               </li>
+               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 hover:bg-gray-800">
+                  <a class="flex-1 h-full flex items-center" href="#">
+                     Galeria
+                  </a>
+               </li>
+            </ul>
+
+         </div>
+
+      </div>
+   </nav>
+
+   <header class="bg-red-500 relative  ">
+
+      <div>
+         <img class="opacity-1 transition-opacity duration-700 w-screen h-full object-cover absolute"
+            src="public/assets/img/recepcja.JPG" alt="">
+         <img class="opacity-0 transition-opacity duration-700 w-screen h-full object-cover absolute"
+            src="public/assets/img/tapeta_1.JPG" alt="">
+         <img class="opacity-0 transition-opacity duration-700 w-screen h-full object-cover absolute"
+            src="public/assets/img/pom_1_1.JPG" alt="">
+         <img class="opacity-0 transition-opacity duration-700 w-screen h-full object-cover absolute"
+            src="public/assets/img/pom_2_1.jpg" alt="">
+      </div>
+
+      <div>
+         <button id="slider-right" class="transition-transform slider absolute top-1/2">
+            <div class="transform rotate-45 m-1 mb-2 w-5 h-1 rounded"></div>
+            <div class="transform -rotate-45 m-1 mt-2 w-5 h-1 rounded"></div>
+         </button>
+
+         <button id="slider-left" class="transition-transform slider absolute top-1/2">
+            <div class="transform -rotate-45 m-1 mb-2 w-5 h-1 rounded"></div>
+            <div class="transform rotate-45 m-1 mt-2 w-5 h-1 rounded"></div>
+         </button>
+      </div>
+
+
+
+      <div id="intro" class="backdrop-filter backdrop-blur-lg bg-gray-900 bg-opacity-80 p-5 rounded-lg z-50 absolute">
+         <h1 class="text-shadow text-red-700 font-bold text-6xl">Studio Ravella</h1>
+         <h3 class="text-shadow text-white">Miejsce, w którym wypoczniesz i poczujesz się jak młody bóg.</h3>
+      </div>
+
+   </header>
+
+   <main>
+      <section class="bg-gray-800 pb-32">
+         <div class="container text-center">
+            <div class="mb-16 px-10 bg-red-600 flex py-4 items-center justify-between">
+               <h3 class="text-base">ZAPISZ SIĘ JUŻ TERAZ, ZRÓB TEN PIERWSZY KROK</h3>
+               <a class="hover:bg-gray-900 hover:text-gray-50 p-2 border-2 border-gray-900 transition-all"
+                  href="#">ZAPISZ SIĘ</a>
+            </div>
+
+            <h2 class="text-5xl text-red-600 text-shadow">Witamy w naszym studiu</h2>
+            <hr role="tournament6">
+            <p class="text-gray-300 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur animi
+               sapiente eveniet assumenda
+               amet,
+               quam, reiciendis esse quod sed quia natus ut, exercitationem aspernatur odit? Temporibus unde ipsum
+               atque,
+               deleniti expedita aliquam optio quo ipsa, obcaecati magni possimus nemo animi reiciendis fugit quisquam
+               similique assumenda, ab sed ea dolorum! Iure.</p>
+
+         </div>
+      </section>
+
+      <section class="bg-gray-900 py-32">
+         <div class="container text-center">
+
+            <h2 class="text-5xl text-red-600 text-shadow">Nasze usługi</h2>
+            <hr role="tournament6">
+            <p class="text-gray-300 mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus maxime
+               ipsa magnam, expedita repellat beatae iusto assumenda placeat quam impedit atque sed, obcaecati facere
+               porro neque aperiam ea suscipit illum. Odit cum perferendis aspernatur! Corrupti voluptas eum libero unde
+               dignissimos debitis suscipit vero, vel minus. Expedita aperiam at sit ex incidunt asperiores laudantium
+               excepturi, possimus ut modi quasi dolor hic?</p>
+
+         </div>
+
+
+
+         <div class="container flex flex-row flex-wrap justify-evenly">
+
+            <div class="lift-on-hover my-6 card flex-shrink-0 p-3 mx-3 border-2 border-gray-500 text-center relative">
+               <img src="./public/assets/img/tapeta_1.JPG" alt="">
+               <h4 class="text-white text-2xl mt-2 mb-5 ">Lorem, ipsum.</h4>
+               <a class="bg-gray-900 card-link p-2 text-gray-200 hover:text-white hover:bg-red-600 border-2 border-red-600 transition-all "
+                  href="#">Leran More</a>
+            </div>
+
+            <div class="lift-on-hover my-6 card flex-shrink-0 p-3 mx-3 border-2 border-gray-500 text-center relative">
+               <img src="./public/assets/img/tapeta_1.JPG" alt="">
+               <h4 class="text-white text-2xl mt-2 mb-5 ">Lorem, ipsum.</h4>
+               <a class="bg-gray-900 card-link p-2 text-gray-200 hover:text-white hover:bg-red-600 border-2 border-red-600 transition-all "
+                  href="#">Leran More</a>
+            </div>
+
+            <div class="lift-on-hover my-6 card flex-shrink-0 p-3 mx-3 border-2 border-gray-500 text-center relative">
+               <img src="./public/assets/img/tapeta_1.JPG" alt="">
+               <h4 class="text-white text-2xl mt-2 mb-5 ">Lorem, ipsum.</h4>
+               <a class="bg-gray-900 card-link p-2 text-gray-200 hover:text-white hover:bg-red-600 border-2 border-red-600 transition-all "
+                  href="#">Leran More</a>
+            </div>
+
+         </div>
+      </section>
+
+      <section id="attachedImgFixed" class="py-32 flex">
+         <div class="px-16 flex flex-col justify-center">
+
+            <h2 class="text-5xl text-white text-shadow">Nasze usługi</h2>
+            <p class="text-gray-50 mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus maxime
+               ipsa magnam, expedita repellat beatae iusto assumenda placeat quam impedit atque sed, obcaecati facere
+               porro neque aperiam ea suscipit illum. Odit cum perferendis aspernatur! Corrupti voluptas eum libero unde
+               dignissimos debitis suscipit vero, vel minus. Expedita aperiam at sit ex incidunt asperiores laudantium
+               excepturi, possimus ut modi quasi dolor hic?</p>
+
+            <a class="mt-10 text-center p-2 w-32 text-gray-50 hover:text-white hover:bg-red-600 border-2 border-red-600 transition-all "
+               href="#">Leran More</a>
+
+         </div>
+      </section>
+
+      <section id="galeria" class="bg-gray-900 py-32">
+         <div class="container text-center">
+
+            <h2 class="text-5xl text-red-600 text-shadow mb-10">Galeria </h2>
+            <hr role="tournament6">
+            <div class="my-5 grid-gallery  flex flex-row flex-wrap justify-evenly">
+
+               <img class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+
+
+            </div>
+            <a class="flex justify-center mt-10  p-2 text-gray-50 hover:text-white hover:bg-red-600 border-2 border-red-600 transition-all "
+               href="#">View More</a>
+         </div>
+      </section>
+
+      <section id="cennik-demo" class=" py-32">
+         <div class="container text-center">
+
+            <h2 class="text-5xl text-red-600 text-shadow">Cennik</h2>
+            <hr role="tournament6">
+            <p class="text-gray-300 mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus maxime
+               ipsa magnam, expedita repellat beatae iusto assumenda placeat quam impedit atque sed, obcaecati facere
+               porro neque aperiam ea suscipit illum. Odit cum perferendis aspernatur! Corrupti voluptas eum libero unde
+               dignissimos debitis suscipit vero, vel minus. Expedita aperiam at sit ex incidunt asperiores laudantium
+               excepturi, possimus ut modi quasi dolor hic?</p>
+
+         </div>
+
+
+
+         <div class="container flex flex-row flex-wrap justify-evenly pt-10">
+
+
+            <div class="lift-on-hover cennik-tile border-2 border-gray-500 flex flex-col ">
+
+               <img class="mb-3  w-full cennik-img" src="./public/assets/img/tapeta_1.JPG" alt="">
+
+               <div class="flex flex-col text-white mx-5">
+                  <h4 class="text-2xl mb-2 flex flex-row justify-between items-center">
+                     <span>
+                        Usługa 1
+                     </span>
+                     <a class="px-2 py-1 text-base text-white border-2 border-gray-300 hover:text-gray-800 hover:bg-gray-200 transition-all"
+                        href="#">110PLN</a>
+                  </h4>
+
+                  <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga libero consequuntur a
+                     quae quos incidunt eius iste architecto harum, dignissimos ex expedita odit minus quisquam fugiat
+                     non nobis deleniti ipsa. Porro est, eligendi amet sunt ad debitis corporis error dolore?
+                  </p>
+
+               </div>
+
+            </div>
+
+            <div class="lift-on-hover cennik-tile border-2 border-gray-500 flex flex-col ">
+
+               <img class="mb-3  w-full cennik-img" src="./public/assets/img/tapeta_1.JPG" alt="">
+
+               <div class="flex flex-col text-white mx-5">
+                  <h4 class="text-2xl mb-2 flex flex-row justify-between items-center">
+                     <span>
+                        Usługa 2
+                     </span>
+                     <a class="px-2 py-1 text-base text-white border-2 border-gray-300 hover:text-gray-800 hover:bg-gray-200 transition-all"
+                        href="#">110PLN</a>
+                  </h4>
+
+                  <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga libero consequuntur a
+                     quae quos incidunt eius iste architecto harum, dignissimos ex expedita odit minus quisquam fugiat
+                     non nobis deleniti ipsa. Porro est, eligendi amet sunt ad debitis corporis error dolore?
+                  </p>
+
+               </div>
+
+            </div>
+
+            <div class="lift-on-hover cennik-tile border-2 border-gray-500 flex flex-col ">
+
+               <img class="mb-3  w-full cennik-img" src="./public/assets/img/tapeta_1.JPG" alt="">
+
+               <div class="flex flex-col text-white mx-5">
+                  <h4 class="text-2xl mb-2 flex flex-row justify-between items-center">
+                     <span>
+                        Usługa 3
+                     </span>
+                     <a class="px-2 py-1 text-base text-white border-2 border-gray-300 hover:text-gray-800 hover:bg-gray-200 transition-all"
+                        href="#">110PLN</a>
+                  </h4>
+
+                  <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga libero consequuntur a
+                     quae quos incidunt eius iste architecto harum, dignissimos ex expedita odit minus quisquam fugiat
+                     non nobis deleniti ipsa. Porro est, eligendi amet sunt ad debitis corporis error dolore?
+                  </p>
+
+               </div>
+
+            </div>
+
+
+
+
+            <a class="w-full mt-10 text-center p-2 text-gray-50 hover:text-white hover:bg-red-600 border-2 border-red-600 transition-all "
+               href="#">View More</a>
+         </div>
+
+
+
+
+      </section>
+
+      <section id="kontakt" class="bg-gray-900 py-32">
+         <div class="container text-center">
+
+
+            <h2 class="text-5xl text-red-600 text-shadow">Napisz Do Nas!</h2>
+            <p class="text-gray-300 mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam distinctio
+               voluptas nisi quam aspernatur eveniet pariatur aliquid? Repellat sit sint ipsum esse fugit eos saepe
+               veniam ratione voluptate dicta porro sunt aperiam alias, recusandae numquam quam consectetur nemo aliquid
+               aut totam nesciunt explicabo maiores? Ipsa quidem deleniti temporibus provident sint?</p>
+
+            <hr role="tournament6">
+            <form action="" class="needs-validation text-left flex flex-col" validate>
+
+
+               <label for="name"
+                  class="my-2 block w-full space-y-1 text-gray-300 text-md font-semibold px-4 py-3 rounded-xl border border-red-600 transition ">
+                  <span>First name</span>
+                  <input type="text" id="name" placeholder="e.g. Jan Kowalski"
+                     class="bg-gray-300 text-black w-full p-3 font-thin transition duration-200 focus:shadow-md focus:outline-none ring-offset-2 border border-gray-400 rounded-lg "
+                     required>
+                  <label class="text-sm font-semibold text-gray-400">Should be atleast 5 chars long!</label>
+               </label>
+               <label for="email"
+                  class="my-2 block w-full space-y-1 text-gray-300 text-md font-semibold px-4 py-3 rounded-xl border border-red-600 transition ">
+                  <span>Email</span>
+                  <input type="email" id="email" placeholder="e.g. jan.kowalski@gmail.com"
+                     class="bg-gray-300 text-black w-full p-3 font-thin transition duration-200 focus:shadow-md focus:outline-none ring-offset-2 border border-gray-400 rounded-lg "
+                     required>
+                  <label class="text-sm font-semibold text-gray-400">Should be atleast 5 chars long!</label>
+               </label>
+               <label for="message"
+                  class="my-2 block w-full space-y-1 text-gray-300 text-md font-semibold px-4 py-3 rounded-xl border border-red-600 transition ">
+                  <span>Wiadomość</span>
+                  <textarea type="text" id="message" placeholder="e.g. Witam, chciałbym się spytac o..." rows="7"
+                     class="bg-gray-300 text-black w-full p-3 font-thin transition duration-200 focus:shadow-md focus:outline-none ring-offset-2 border border-gray-400 rounded-lg "></textarea>
+                  <label class="text-sm font-semibold text-gray-400" required>Should be atleast 5 chars long!</label>
+               </label>
+
+               <button class="ml-auto p-4 text-gray-300 border bg-red-700 border-red-900 hover:bg-red-600 rounded"
+                  type="submit">Prześlij</button>
+
+
+            </form>
+
+
+
+         </div>
+      </section>
+
+
+
+   </main>
+
+
+
+
+   <footer class="footer-1 bg-black text-white py-8 sm:py-12">
+      <div class="container mx-auto px-4">
+         <div class="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
+            <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
+               <h5 class="text-xl font-bold mb-6">Features</h5>
+               <ul class="list-none footer-links">
+                  <li class="mb-2">
+                     <a href="#"
+                        class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Cool
+                        stuff</a>
+                  </li>
+                  <li class="mb-2">
+                     <a href="#"
+                        class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Random
+                        feature</a>
+                  </li>
+                  <li class="mb-2">
+                     <a href="#"
+                        class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Team
+                        feature</a>
+                  </li>
+                  <li class="mb-2">
+                     <a href="#"
+                        class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Stuff
+                        for developers</a>
+                  </li>
+                  <li class="mb-2">
+                     <a href="#"
+                        class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Another
+                        one</a>
+                  </li>
+                  <li class="mb-2">
+                     <a href="#"
+                        class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Last
+                        time</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 sm:mt-0">
+               <h5 class="text-xl font-bold mb-6">Resources</h5>
+               <ul class="list-none footer-links">
+                  <li class="mb-2">
+                     <a href="#"
+                        class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Resource</a>
+                  </li>
+                  <li class="mb-2">
+                     <a href="#"
+                        class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Resource
+                        name</a>
+                  </li>
+                  <li class="mb-2">
+                     <a href="#"
+                        class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Another
+                        resource</a>
+                  </li>
+                  <li class="mb-2">
+                     <a href="#"
+                        class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Final
+                        resource</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
+               <h5 class="text-xl font-bold mb-6">About</h5>
+               <ul class="list-none footer-links">
+                  <li class="mb-2">
+                     <a href="#"
+                        class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Team</a>
+                  </li>
+                  <li class="mb-2">
+                     <a href="#"
+                        class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Locations</a>
+                  </li>
+                  <li class="mb-2">
+                     <a href="#"
+                        class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Privacy</a>
+                  </li>
+                  <li class="mb-2">
+                     <a href="#"
+                        class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Terms</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
+               <h5 class="text-xl font-bold mb-6">Help</h5>
+               <ul class="list-none footer-links">
+                  <li class="mb-2">
+                     <a href="#"
+                        class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Support</a>
+                  </li>
+                  <li class="mb-2">
+                     <a href="#"
+                        class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Help
+                        Center</a>
+                  </li>
+                  <li class="mb-2">
+                     <a href="#"
+                        class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Contact
+                        Us</a>
+                  </li>
+               </ul>
+            </div>
+            <div class="px-4 mt-4 sm:w-1/3 xl:w-1/6 sm:mx-auto xl:mt-0 xl:ml-auto">
+               <h5 class="text-xl font-bold mb-6 sm:text-center xl:text-left">Stay connected</h5>
+               <div class="flex sm:justify-center xl:justify-start">
+                  <a href=""
+                     class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 text-gray-600 hover:text-white hover:bg-blue-600 hover:border-blue-600">
+                     <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href=""
+                     class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-white hover:bg-blue-400 hover:border-blue-400">
+                     <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href=""
+                     class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-white hover:bg-red-600 hover:border-red-600">
+                     <i class="fab fa-google-plus-g"></i>
+                  </a>
+               </div>
+            </div>
+         </div>
+
+         <div class="sm:flex sm:flex-wrap sm:-mx-4 mt-6 pt-6 sm:mt-12 sm:pt-12 border-t">
+            <div class="sm:w-full px-4 md:w-1/6">
+               <strong>FWR</strong>
+            </div>
+            <div class="px-4 sm:w-1/2 md:w-1/4 mt-4 md:mt-0">
+               <h6 class="font-bold mb-2">Address</h6>
+               <address class="not-italic mb-4 text-sm">
+                  123 6th St.<br>
+                  Melbourne, FL 32904
+               </address>
+            </div>
+            <div class="px-4 sm:w-1/2 md:w-1/4 mt-4 md:mt-0">
+               <h6 class="font-bold mb-2">Free Resources</h6>
+               <p class="mb-4 text-sm">Use our HTML blocks for <strong>FREE</strong>.<br>
+                  <em>All are MIT License</em>
+               </p>
+            </div>
+            <div class="px-4 md:w-1/4 md:ml-auto mt-6 sm:mt-4 md:mt-0">
+               <button class="px-4 py-2 bg-purple-800 hover:bg-purple-900 rounded text-white">Get Started</button>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+
+   <script src="public/javascripts/script.js"></script>
 </body>
 
 </html>

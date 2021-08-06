@@ -18,7 +18,7 @@
    <link rel="stylesheet" href="./public/stylesheets/app.css">
 </head>
 
-<body class="bg-black-800 border-body border-red-600 flex flex-col">
+<body class="bg-black-800 border-body border-red-600 flex flex-col slim-scrollbar">
 
 
    <nav class="bg-black-900 py-4 border-body border-red-600">
@@ -26,7 +26,9 @@
 
 
          <div class="text-2xl my-auto flex flex-1">
-            <a class="flex-1 py-2 text-gray-200 hover:text-gray-50" href="/">Studio Ravella</a>
+            <a class="brand-link flex-1 py-2 text-gray-200 hover:text-gray-50" href="/">
+               <img src="./public/assets/img/logo_text.png" alt="logo text">
+            </a>
 
             <button id="nav-toggler" class="block md:hidden">
                <div class="transform-gpu transition-transform m-1 w-8 h-1 bg-black-600 rounded"></div>
@@ -46,22 +48,22 @@
                   MENU
                </li>
 
-               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 hover:bg-black-800">
+               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 ">
                   <a class="flex-1 h-full flex items-center" href="/#kontakt">
                      Kontakt
                   </a>
                </li>
-               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 hover:bg-black-800">
+               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 ">
                   <a class="flex-1 h-full flex items-center" href="/cennik.html">
                      Cennik
                   </a>
                </li>
-               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 hover:bg-black-800">
+               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 ">
                   <a class="flex-1 h-full flex items-center" href="#">
                      O nas
                   </a>
                </li>
-               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 hover:bg-black-800">
+               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 ">
                   <a class="flex-1 h-full flex items-center" href="/galeria.html">
                      Galeria
                   </a>
@@ -79,10 +81,10 @@
    <main class="flex-1">
 
       <section class="pt-32 relative">
-         <h1 class="container mb-10 text-shadow text-red-600 font-black text-8xl">Cennik</h1>
+         <h1 class="container mb-10 text-shadow text-gray-200 font-black text-8xl">Cennik</h1>
 
          <img src="./public/assets/svg/undraw_wallet_aym5.svg" alt=""
-            class="hidden md:block opacity-50  w-48  absolute top-0 mt-28 left-3/4">
+            class="  opacity-50 w-24 md:w-48  absolute top-0 mt-28 left-3/4">
 
          <div class="container flex flex-col bg-black-900">
 
@@ -252,13 +254,11 @@
 
 
 
-
-
-   <footer class="footer-1 bg-red-800 text-white py-8 sm:py-12">
+   <footer class="footer-1 bg-black-1000 text-gray-300 py-8 sm:py-12">
       <div class="container mx-auto px-4">
          <div class="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
 
-            <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
+            <div class="mt-10 sm:mt-0 px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
                <h5 class="text-xl font-bold mb-6">Studio Ravella</h5>
                <ul class="list-none footer-links">
                   <li class="mb-2">
@@ -286,7 +286,7 @@
             </div>
 
 
-            <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
+            <div class="mt-10 sm:mt-0 px-4 sm:w-1/2 md:w-1/4 xl:w-1/6  md:mt-0">
                <h5 class="text-xl font-bold mb-6">Galeria</h5>
                <ul class="list-none footer-links">
 
@@ -302,32 +302,36 @@
                </ul>
             </div>
 
-            <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
+            <div class="mt-10 sm:mt-0 px-4 sm:w-1/2 md:w-1/4 xl:w-1/6  md:mt-0">
                <h5 class="text-xl font-bold mb-6">Pomoc</h5>
                <ul class="list-none">
                   <li class="mb-2">
-                     <span class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
-                        Lokalizacja : Patriotów 162, 04-839 Warszawa
+                     <span
+                        class="flex flex-wrap border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
+                        <span>Lokalizacja : </span>
+                        <span>Patriotów 162, 04-839 Warszawa</span>
                      </span>
                   </li>
                   <li class="mb-2">
                      <a href="tel:+48226153401"
-                        class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
-                        Telefon : +48 22 615 34 01</a>
+                        class="flex flex-wrap border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
+                        <span>Telefon : </span>
+                        <span>+48 22 615 34 01</a></span>
                   </li>
                   <li class="mb-2">
                      <a href="mailto:kontakt@studioravella.pl"
-                        class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
-                        Mail : kontakt@studioravella.pl</a>
+                        class="flex flex-wrap border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
+                        <span>Mail : </span>
+                        <span>kontakt@studioravella.pl</a></span>
                   </li>
                </ul>
             </div>
 
-            <div class="px-4 mt-4 sm:w-1/3 xl:w-1/6 sm:mx-auto xl:mt-0 xl:ml-auto">
-               <h5 class="text-xl font-bold mb-6 sm:text-center xl:text-left">Stay connected</h5>
-               <div class="flex sm:justify-center xl:justify-start">
+            <div class="mt-10 sm:mt-0 px-4 sm:w-1/3 md:w-1/4 xl:w-1/6 sm:mx-auto xl:mt-0 xl:ml-auto">
+               <h5 class="text-xl font-bold mb-6 sm:text-center xl:text-center">Social media</h5>
+               <div class="flex sm:justify-center xl:justify-center">
                   <a href=""
-                     class="transition-all w-12 h-12 border border-2 border-gray-400 rounded-full text-center text-blue-600 bg-white hover:text-white hover:bg-blue-100 hover:border-blue-100">
+                     class="transition-all w-12 h-12 border border-2 border-gray-400 rounded-full text-center text-blue-600 bg-white hover:text-white hover:bg-blue-100 hover:border-8  hover:border-blue-50">
 
                      <img src="./public/assets/svg/facebook-icon.svg" alt="facebook-icon">
                   </a>
@@ -335,8 +339,7 @@
             </div>
          </div>
 
-         <div class="flex flex-col md:flex-row items-end justify-center  md:justify-end md:items-center border-t">
-
+         <div class="mt-6 flex flex-col md:flex-row items-end justify-center  md:justify-end md:items-center border-t">
             <span>
                &copy; 2021 Damian Trafiałek
             </span>
@@ -345,8 +348,8 @@
          </div>
    </footer>
 
-
    <script src="public/javascripts/cennik.js"></script>
+
 </body>
 
 </html>

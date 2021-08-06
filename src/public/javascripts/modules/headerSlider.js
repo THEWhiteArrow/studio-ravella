@@ -6,7 +6,7 @@ const setUpHeader = (() => {
 
    const sliderTextArr = [
       'Miejsce, w którym wypoczniesz i poczujesz się jak młody bóg.',
-      'Zapomnij o wszelkich troskachi zrelaksujesz się.',
+      'Zapomnij o wszelkich troskach i zrelaksujesz się.',
       'Poczuj swoje wewnętrzne piękno.',
       'Rozpocznij dzień z szerokim uśmiechem na twarzy.',
    ]
@@ -39,7 +39,7 @@ const setUpHeader = (() => {
    const manageDots = (i) => {
       dotElements.forEach(el => {
          el.classList.remove('bg-red-600');
-         el.classList.add('bg-red-200');
+         el.classList.add('bg-gray-50');
       })
       dotElements[i].classList.add('bg-red-600');
    }
@@ -151,5 +151,7 @@ const setUpHeader = (() => {
 
    return { start, stop };
 
-})().start({ duration: 8 * 1000 })
+})()
+
+export { setUpHeader }
 

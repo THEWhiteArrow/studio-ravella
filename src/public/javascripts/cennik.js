@@ -1,1 +1,3 @@
-import './modules/navbar'
+import { setUpNavbar } from './modules/navbar'
+
+setUpNavbar.start();

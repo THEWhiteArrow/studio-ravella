@@ -1,9 +1,12 @@
-import './modules/navbar'
-import './modules/headerSlider'
-import './modules/showImg'
+import { setUpNavbar } from './modules/navbar'
+import { setUpHeader } from './modules/headerSlider'
+import { customGallery } from './modules/customGallery'
 
+setUpHeader.start({ duration: 8 * 1000 });
 
+setUpNavbar.start();
 
+customGallery.start3();
 
 const validateForms = (() => {
    const forms = document.querySelectorAll('.needs-validation');

@@ -14,11 +14,14 @@
    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
       rel="stylesheet">
 
-   <link rel="stylesheet" href="./public/stylesheets/tailwind.css">
-   <link rel="stylesheet" href="./public/stylesheets/app.css">
+
+
+   <link rel="stylesheet" href="public/stylesheets/tailwind.css">
+   <link rel="stylesheet" href="public/stylesheets/app.css">
+
 </head>
 
-<body class="bg-black-800 border-body border-red-600">
+<body class="bg-black-800 border-body border-red-600 slim-scrollbar">
 
 
    <nav class="bg-black-900 py-4 border-body border-red-600">
@@ -26,7 +29,9 @@
 
 
          <div class="text-2xl my-auto flex flex-1">
-            <a class="flex-1 py-2 text-gray-200 hover:text-gray-50" href="/">Studio Ravella</a>
+            <a class="brand-link flex-1 py-2 text-gray-200 hover:text-gray-50" href="/">
+               <img src="./public/assets/img/logo_text.png" alt="logo text">
+            </a>
 
             <button id="nav-toggler" class="block md:hidden">
                <div class="transform-gpu transition-transform m-1 w-8 h-1 bg-black-600 rounded"></div>
@@ -46,22 +51,22 @@
                   MENU
                </li>
 
-               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 hover:bg-black-800">
+               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 ">
                   <a class="flex-1 h-full flex items-center" href="/#kontakt">
                      Kontakt
                   </a>
                </li>
-               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 hover:bg-black-800">
+               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 ">
                   <a class="flex-1 h-full flex items-center" href="/cennik.html">
                      Cennik
                   </a>
                </li>
-               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 hover:bg-black-800">
+               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 ">
                   <a class="flex-1 h-full flex items-center" href="#">
                      O nas
                   </a>
                </li>
-               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 hover:bg-black-800">
+               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 ">
                   <a class="flex-1 h-full flex items-center" href="/galeria.html">
                      Galeria
                   </a>
@@ -105,8 +110,12 @@
 
 
       <div id="slider-data" class="shadow-lg p-5 rounded-lg z-50 absolute">
-         <h1 class="text-shadow text-red-600 font-bold text-6xl md:text-7xl">Studio Ravella</h1>
-         <h3 class="text-shadow text-white font-base text-lg md:text-xl">Miejsce, w którym wypoczniesz i poczujesz się
+         <h1 class="text-shadow text-red-600 font-bold text-6xl md:text-7xl">
+            <img class="logo-header-img" src="./public/assets/img/logo_text.png" alt="Studio Ravella">
+
+         </h1>
+         <h3 class="text-shadow text-gray-100 font-base text-lg md:text-xl">Miejsce, w którym wypoczniesz i poczujesz
+            się
             jak
             młody
             bóg.</h3>
@@ -127,7 +136,7 @@
                   href="#">ZAPISZ SIĘ</a>
             </div> -->
 
-            <h2 class="text-5xl text-red-600 text-shadow text-center">Witamy w naszym studiu</h2>
+            <h2 class="text-5xl text-gray-300 text-shadow text-center">Witamy w naszym studiu</h2>
             <hr role="tournament6">
             <p class="text-gray-300 mt-3 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                Consequuntur animi
@@ -146,7 +155,7 @@
       <section class="bg-black-900 py-32 relative">
          <div class="container">
 
-            <h2 class="text-5xl text-red-600 text-shadow text-center">Nasze usługi</h2>
+            <h2 class="text-5xl text-gray-300 text-shadow text-center">Nasze usługi</h2>
             <hr role="tournament6">
             <p class="text-gray-300 mt-3 text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                Temporibus maxime
@@ -166,22 +175,22 @@
 
             <div class="lift-on-hover my-6 card flex-shrink-0 p-3 mx-3 border-2 border-gray-500 text-center relative">
                <img loading="lazy" src="./public/assets/img/tapeta_1.JPG" alt="">
-               <h4 class="text-white text-2xl mt-2 mb-5 ">Strzyżenie</h4>
-               <a class="bg-black-900 card-link p-2 text-gray-200 hover:text-white hover:bg-red-600 border-2 border-red-600 transition-all "
+               <h4 class="text-gray-300 text-2xl mt-2 mb-5 ">Strzyżenie</h4>
+               <a class="bg-red-900 card-link p-2 text-gray-200 hover:text-gray-100 hover:bg-red-600 border-2 border-red-600 transition-all "
                   href="#">Cennik</a>
             </div>
 
             <div class="lift-on-hover my-6 card flex-shrink-0 p-3 mx-3 border-2 border-gray-500 text-center relative">
                <img loading="lazy" src="./public/assets/img/tapeta_1.JPG" alt="">
-               <h4 class="text-white text-2xl mt-2 mb-5 ">Solarium</h4>
-               <a class="bg-black-900 card-link p-2 text-gray-200 hover:text-white hover:bg-red-600 border-2 border-red-600 transition-all "
+               <h4 class="text-gray-300 text-2xl mt-2 mb-5 ">Solarium</h4>
+               <a class="bg-red-900 card-link p-2 text-gray-200 hover:text-gray-100 hover:bg-red-600 border-2 border-red-600 transition-all "
                   href="#">Cennik</a>
             </div>
 
             <div class="lift-on-hover my-6 card flex-shrink-0 p-3 mx-3 border-2 border-gray-500 text-center relative">
                <img loading="lazy" src="./public/assets/img/tapeta_1.JPG" alt="">
-               <h4 class="text-white text-2xl mt-2 mb-5 ">Spa</h4>
-               <a class="bg-black-900 card-link p-2 text-gray-200 hover:text-white hover:bg-red-600 border-2 border-red-600 transition-all "
+               <h4 class="text-gray-300 text-2xl mt-2 mb-5 ">Spa</h4>
+               <a class="bg-red-900 card-link p-2 text-gray-200 hover:text-gray-100 hover:bg-red-600 border-2 border-red-600 transition-all "
                   href="#">Cennik</a>
             </div>
 
@@ -199,7 +208,7 @@
                dignissimos debitis suscipit vero, vel minus. Expedita aperiam at sit ex incidunt asperiores laudantium
                excepturi, possimus ut modi quasi dolor hic?</p>
 
-            <a class="mt-10 text-center p-2 w-32 text-gray-50 hover:text-white hover:bg-red-600 border-2 border-red-600 transition-all "
+            <a class="mt-10 text-center p-2 w-32 text-gray-50 bg-red-900 hover:text-white hover:bg-red-600 border-2 border-red-600 transition-all "
                href="#">O Nas</a>
 
          </div>
@@ -208,7 +217,7 @@
       <section id="galeria" class="bg-black-900 py-32 relative">
          <div class="container ">
 
-            <h2 class="text-5xl text-red-600 text-shadow mb-10 text-center">Galeria </h2>
+            <h2 class="text-5xl text-gray-300 text-shadow mb-10 text-center">Galeria </h2>
             <hr role="tournament6">
             <p class="text-gray-300 my-3 text-justify">
                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt laborum ullam tempore, sint eaque
@@ -221,25 +230,29 @@
 
             <div class="my-5 grid-gallery  grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-10">
 
-               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
-               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
-               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
-               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
-               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
-               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
 
-               <img loading="lazy" class="grid-gallery-item hidden md:block" src="./public/assets/img/pom_1_2.JPG"
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_1.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/logo.jpg" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_2_1.jpg" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_2_2.jpg" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/recepcja.JPG" alt="">
+
+
+               <img loading="lazy" class="grid-gallery-item hidden md:block" src="./public/assets/img/tapeta_1.JPG"
                   alt="">
                <img loading="lazy" class="grid-gallery-item hidden md:block" src="./public/assets/img/pom_1_2.JPG"
                   alt="">
-               <img loading="lazy" class="grid-gallery-item hidden md:block" src="./public/assets/img/pom_1_2.JPG"
+               <img loading="lazy" class="grid-gallery-item hidden md:block" src="./public/assets/img/pom_1_1.JPG"
                   alt="">
-               <img loading="lazy" class="grid-gallery-item hidden md:block" src="./public/assets/img/pom_1_2.JPG"
+               <img loading="lazy" class="grid-gallery-item hidden md:block" src="./public/assets/img/logo.jpg" alt="">
+               <img loading="lazy" class="grid-gallery-item hidden md:block" src="./public/assets/img/pom_2_1.jpg"
                   alt="">
-               <img loading="lazy" class="grid-gallery-item hidden md:block" src="./public/assets/img/pom_1_2.JPG"
+               <img loading="lazy" class="grid-gallery-item hidden md:block" src="./public/assets/img/pom_2_2.jpg"
                   alt="">
-               <img loading="lazy" class="grid-gallery-item hidden md:block" src="./public/assets/img/pom_1_2.JPG"
-                  alt="">
+
+
+
 
                <!-- <img loading="lazy" class="grid-gallery-item hidden lg:block" src="./public/assets/img/pom_1_2.JPG"
                   alt="">
@@ -256,7 +269,7 @@
 
 
             </div>
-            <a class="flex justify-center mt-10  p-2 text-gray-50 hover:text-white hover:bg-red-600 border-2 border-red-600 transition-all "
+            <a class="flex justify-center mt-10 bg-red-900 p-2 text-gray-50 hover:text-white hover:bg-red-600 border-2 border-red-600 transition-all "
                href="/galeria.html">Zobacz Całą Galerię</a>
          </div>
       </section>
@@ -264,7 +277,7 @@
       <section id="cennik-demo" class=" py-32 relative">
          <div class="container text-center">
 
-            <h2 class="text-5xl text-red-600 text-shadow">Cennik</h2>
+            <h2 class="text-5xl text-gray-300 text-shadow">Cennik</h2>
             <hr role="tournament6">
             <p class="text-gray-300 mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus maxime
                ipsa magnam, expedita repellat beatae iusto assumenda placeat quam impedit atque sed, obcaecati facere
@@ -286,12 +299,12 @@
 
                <div class="mb-3 lg:mb-0 cennik-img pb-52" src="./public/assets/img/tapeta_1.JPG" alt=""></div>
 
-               <div class="col-span-2 flex flex-col text-white mx-5 justify-evenly">
+               <div class="col-span-2 flex flex-col text-gray-300 mx-5 justify-evenly">
                   <h4 class="text-2xl mb-2 flex flex-row justify-between items-center">
                      <span>
                         Usługa 1
                      </span>
-                     <a class="px-2 py-1 text-base text-white border-2 border-gray-300 hover:text-gray-800 hover:bg-gray-200 transition-all"
+                     <a class="px-2 py-1 text-base text-gray-300 border-2 border-gray-300 hover:text-gray-800 hover:bg-gray-200 transition-all"
                         href="#">110PLN</a>
                   </h4>
 
@@ -310,12 +323,12 @@
 
                <div class="mb-3 lg:mb-0 cennik-img pb-52" src="./public/assets/img/tapeta_1.JPG" alt=""></div>
 
-               <div class="col-span-2 flex flex-col text-white mx-5 justify-evenly">
+               <div class="col-span-2 flex flex-col text-gray-300 mx-5 justify-evenly">
                   <h4 class="text-2xl mb-2 flex flex-row justify-between items-center">
                      <span>
                         Usługa 1
                      </span>
-                     <a class="px-2 py-1 text-base text-white border-2 border-gray-300 hover:text-gray-800 hover:bg-gray-200 transition-all"
+                     <a class="px-2 py-1 text-base text-gray-300 border-2 border-gray-300 hover:text-gray-800 hover:bg-gray-200 transition-all"
                         href="#">110PLN</a>
                   </h4>
 
@@ -334,12 +347,12 @@
 
                <div class="mb-3 lg:mb-0 cennik-img pb-52" src="./public/assets/img/tapeta_1.JPG" alt=""></div>
 
-               <div class="col-span-2 flex flex-col text-white mx-5 justify-evenly">
+               <div class="col-span-2 flex flex-col text-gray-300 mx-5 justify-evenly">
                   <h4 class="text-2xl mb-2 flex flex-row justify-between items-center">
                      <span>
                         Usługa 1
                      </span>
-                     <a class="px-2 py-1 text-base text-white border-2 border-gray-300 hover:text-gray-800 hover:bg-gray-200 transition-all"
+                     <a class="px-2 py-1 text-base text-gray-300 border-2 border-gray-300 hover:text-gray-800 hover:bg-gray-200 transition-all"
                         href="#">110PLN</a>
                   </h4>
 
@@ -362,7 +375,7 @@
 
 
 
-            <a class="w-full mt-10 text-center p-2 text-gray-50 hover:text-white hover:bg-red-600 border-2 border-red-600 transition-all "
+            <a class="w-full mt-10 bg-red-900 text-center p-2 text-gray-50 hover:text-white hover:bg-red-600 border-2 border-red-600 transition-all "
                href="/cennik.html">Zobacz Cały Cennik</a>
          </div>
 
@@ -375,7 +388,7 @@
          <div class="container text-center">
 
 
-            <h2 class="text-5xl text-red-600 text-shadow">Napisz Do Nas!</h2>
+            <h2 class="text-5xl text-gray-300 text-shadow">Napisz Do Nas!</h2>
             <hr role="tournament6">
             <p class="text-gray-300 mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam distinctio
                voluptas nisi quam aspernatur eveniet pariatur aliquid? Repellat sit sint ipsum esse fugit eos saepe
@@ -385,7 +398,8 @@
             <img src="./public/assets/svg/undraw_message_sent_1030.svg" alt=""
                class="opacity-50 w-24 md:w-48 -scale-x-100 absolute top-0 mt-16 right-3/4">
 
-            <form action="" class="border border-red-600 rounded mt-10 needs-validation text-left flex flex-col"
+            <form action=""
+               class="bg-black-800 border border-red-600 rounded mt-10 needs-validation text-left flex flex-col"
                validate>
 
 
@@ -408,12 +422,12 @@
                <label for="message"
                   class="my-2 block w-full space-y-1 text-gray-300 text-md font-semibold px-4 py-3 rounded-xl  transition ">
                   <span>Wiadomość</span>
-                  <textarea type="text" id="message" placeholder="e.g. Witam, chciałbym się spytac o..." rows="7"
+                  <textarea type="text" id="message" placeholder="e.g. Witam, mam pytanie dotyczące..." rows="7"
                      class="bg-gray-300 text-black w-full p-3 font-thin transition duration-200 focus:shadow-md focus:outline-none ring-offset-2 border border-gray-400 rounded-lg "></textarea>
                   <label class="text-sm font-semibold text-gray-400" required>Powinno zawierać wiadomość</label>
                </label>
 
-               <button class="ml-auto p-4 text-gray-300 border bg-red-700 border-red-900 hover:bg-red-600 "
+               <button class="transition-all p-4 text-gray-300 border bg-red-900 border-red-600 hover:bg-red-600 "
                   type="submit">Prześlij</button>
 
 
@@ -431,11 +445,11 @@
 
 
 
-   <footer class="footer-1 bg-red-800 text-white py-8 sm:py-12">
+   <footer class="footer-1 bg-black-1000 text-gray-300 py-8 sm:py-12">
       <div class="container mx-auto px-4">
          <div class="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
 
-            <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
+            <div class="mt-10 sm:mt-0 px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
                <h5 class="text-xl font-bold mb-6">Studio Ravella</h5>
                <ul class="list-none footer-links">
                   <li class="mb-2">
@@ -463,7 +477,7 @@
             </div>
 
 
-            <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
+            <div class="mt-10 sm:mt-0 px-4 sm:w-1/2 md:w-1/4 xl:w-1/6  md:mt-0">
                <h5 class="text-xl font-bold mb-6">Galeria</h5>
                <ul class="list-none footer-links">
 
@@ -479,32 +493,36 @@
                </ul>
             </div>
 
-            <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
+            <div class="mt-10 sm:mt-0 px-4 sm:w-1/2 md:w-1/4 xl:w-1/6  md:mt-0">
                <h5 class="text-xl font-bold mb-6">Pomoc</h5>
                <ul class="list-none">
                   <li class="mb-2">
-                     <span class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
-                        Lokalizacja : Patriotów 162, 04-839 Warszawa
+                     <span
+                        class="flex flex-wrap border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
+                        <span>Lokalizacja : </span>
+                        <span>Patriotów 162, 04-839 Warszawa</span>
                      </span>
                   </li>
                   <li class="mb-2">
                      <a href="tel:+48226153401"
-                        class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
-                        Telefon : +48 22 615 34 01</a>
+                        class="flex flex-wrap border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
+                        <span>Telefon : </span>
+                        <span>+48 22 615 34 01</a></span>
                   </li>
                   <li class="mb-2">
                      <a href="mailto:kontakt@studioravella.pl"
-                        class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
-                        Mail : kontakt@studioravella.pl</a>
+                        class="flex flex-wrap border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
+                        <span>Mail : </span>
+                        <span>kontakt@studioravella.pl</a></span>
                   </li>
                </ul>
             </div>
 
-            <div class="px-4 mt-4 sm:w-1/3 xl:w-1/6 sm:mx-auto xl:mt-0 xl:ml-auto">
-               <h5 class="text-xl font-bold mb-6 sm:text-center xl:text-left">Stay connected</h5>
-               <div class="flex sm:justify-center xl:justify-start">
+            <div class="mt-10 sm:mt-0 px-4 sm:w-1/3 md:w-1/4 xl:w-1/6 sm:mx-auto xl:mt-0 xl:ml-auto">
+               <h5 class="text-xl font-bold mb-6 sm:text-center xl:text-center">Social media</h5>
+               <div class="flex sm:justify-center xl:justify-center">
                   <a href=""
-                     class="transition-all w-12 h-12 border border-2 border-gray-400 rounded-full text-center text-blue-600 bg-white hover:text-white hover:bg-blue-100 hover:border-blue-100">
+                     class="transition-all w-12 h-12 border border-2 border-gray-400 rounded-full text-center text-blue-600 bg-white hover:text-white hover:bg-blue-100 hover:border-8  hover:border-blue-50">
 
                      <img src="./public/assets/svg/facebook-icon.svg" alt="facebook-icon">
                   </a>
@@ -512,7 +530,7 @@
             </div>
          </div>
 
-         <div class="flex flex-col md:flex-row items-end justify-center  md:justify-end md:items-center border-t">
+         <div class="mt-6 flex flex-col md:flex-row items-end justify-center  md:justify-end md:items-center border-t">
             <span>
                &copy; 2021 Damian Trafiałek
             </span>
@@ -520,6 +538,10 @@
                class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300 mx-2">damian.trafialek@gmail.com</a>
          </div>
    </footer>
+
+
+
+
 
 
    <script src="public/javascripts/main.js"></script>

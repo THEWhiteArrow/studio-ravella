@@ -1,6 +1,6 @@
-const setUpGaleria = (() => {
+const customGallery = (() => {
    const galeria = document.querySelector('#galeria')
-   const imgs = galeria.querySelectorAll('img');
+   const imgs = galeria.querySelectorAll('.grid-gallery img');
    let imgCounter = 0;
 
    const start = () => {
@@ -51,7 +51,7 @@ const setUpGaleria = (() => {
          el.addEventListener('click', () => {
             const imageShow = document.createElement('section');
             imageShow.innerHTML = `
-               <section id="image-show"  style="z-index:11000;" class="fixed w-screen h-screen bg-black-900 bg-opacity-1">
+               <section id="image-show"  style="z-index:11000; pointer-events:all;" class="fixed w-screen h-screen bg-black bg-opacity-95 bg-opacity-1">
                
                   <button id="image-show-close" class="mt-10 ml-10">
                      <div class="transform-gpu transition-transform m-1 w-8 h-1 bg-red-500 rounded    translate-y-2 rotate-45"></div>
@@ -80,7 +80,9 @@ const setUpGaleria = (() => {
             document.body.style.overflowY = "hidden";
 
             const imgShowed = document.getElementById('image-showed')
-
+            imgShowed.style.transition = 'var(--my-transition)';
+            imgShowed.style.transitionDuration = '0.5s';
+            // imgShowed.style.clipPath = 'circle(100% at 50% 50%)';
 
             document.getElementById('image-show-close').addEventListener('click', () => {
                imageShow.remove()
@@ -91,13 +93,26 @@ const setUpGaleria = (() => {
             document.getElementById('image-show-right').addEventListener('click', () => {
 
                imgCounter++;
+               imgShowed.style.opacity = 0;
+               // imgShowed.style.clipPath = 'circle(0% at 50% 50%)';
                imgCounter >= imgs.length ? imgCounter = 0 : null;
-               imgShowed.src = imgs[imgCounter].src;
+               setTimeout(() => {
+                  imgShowed.src = imgs[imgCounter].src;
+                  imgShowed.style.opacity = 1;
+                  // imgShowed.style.clipPath = 'circle(100% at 50% 50%)';
+
+               }, 500)
             })
             document.getElementById('image-show-left').addEventListener('click', () => {
                imgCounter--;
+               imgShowed.style.opacity = 0;
+               // imgShowed.style.clipPath = 'circle(0% at 50% 50%)';
                imgCounter < 0 ? imgCounter = imgs.length - 1 : null;
-               imgShowed.src = imgs[imgCounter].src;
+               setTimeout(() => {
+                  imgShowed.src = imgs[imgCounter].src;
+                  imgShowed.style.opacity = 1;
+                  // imgShowed.style.clipPath = 'circle(100% at 50% 50%)';
+               }, 500)
             })
 
 
@@ -109,4 +124,6 @@ const setUpGaleria = (() => {
 
    return { start, start2, start3 }
 
-})().start3()
+})()
+
+export { customGallery }

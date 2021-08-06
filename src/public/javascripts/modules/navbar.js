@@ -30,6 +30,12 @@ const setUpNavbar = (() => {
 
    }
 
+
    return { start };
 
-})().start();
+})()
+
+
+
+
+export { setUpNavbar };

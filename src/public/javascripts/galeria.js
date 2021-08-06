@@ -1,2 +1,5 @@
-import './modules/navbar'
-import './modules/showImg'
+import { setUpNavbar } from './modules/navbar'
+import { customGallery } from './modules/customGallery'
+
+setUpNavbar.start();
+customGallery.start3()

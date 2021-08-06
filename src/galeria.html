@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Studio Ravella</title>
+
+   <link rel="icon" type="image/png" href="./public/assets/img/logo.jpg">
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="./public/stylesheets/tailwind.css">
+   <link rel="stylesheet" href="./public/stylesheets/app.css">
+</head>
+
+<body class="bg-gray-800 border-body border-red-600 flex flex-col">
+
+
+   <nav class="bg-gray-900 py-4 border-body border-red-600">
+      <div class="container mx-auto  flex flex-row">
+
+
+         <div class="text-2xl my-auto flex flex-1">
+            <a class="flex-1 py-2 text-gray-200 hover:text-gray-50" href="/">Studio Ravella</a>
+
+            <button id="nav-toggler" class="block md:hidden">
+               <div class="transform-gpu transition-transform m-1 w-8 h-1 bg-gray-600 rounded"></div>
+               <div class="transform-gpu transition-transform m-1 w-8 h-1 bg-gray-600 rounded"></div>
+               <div class="transform-gpu transition-transform m-1 w-8 h-1 bg-gray-600 rounded"></div>
+            </button>
+         </div>
+
+         <div
+            class="nav-toggable-hidden absolute md:relative md:h-auto md:w-auto inset-0 h-screen w-40 bg-gray-900 transform-gpu transition-all text-lg"
+            id="nav-toggable">
+
+
+            <ul class="px-3 md:px-0  flex flex-col md:flex-row h-full">
+
+               <li class="p-2 pt-16 pb-8 md:hidden flex text-gray-100  text-2xl">
+                  MENU
+               </li>
+
+               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 hover:bg-gray-800">
+                  <a class="flex-1 h-full flex items-center" href="/#kontakt">
+                     Kontakt
+                  </a>
+               </li>
+               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 hover:bg-gray-800">
+                  <a class="flex-1 h-full flex items-center" href="/cennik.html">
+                     Cennik
+                  </a>
+               </li>
+               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 hover:bg-gray-800">
+                  <a class="flex-1 h-full flex items-center" href="#">
+                     O nas
+                  </a>
+               </li>
+               <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 hover:bg-gray-800">
+                  <a class="flex-1 h-full flex items-center" href="/galeria.html">
+                     Galeria
+                  </a>
+               </li>
+            </ul>
+
+         </div>
+
+      </div>
+   </nav>
+
+   <div class="navbarSpaceFiller"></div>
+
+
+   <main class="flex-1">
+
+      <section class="pt-32 relative">
+         <h1 class="container mb-10 text-shadow text-red-600 font-black text-8xl">Galeria</h1>
+
+         <img src="./public/assets/svg/undraw_Portfolio_re_qwm5.svg" alt=""
+            class="hidden md:block opacity-75  w-48  absolute top-0 mt-28 left-3/4">
+
+         <div class="container flex flex-col bg-gray-900">
+
+            <div class=" flex rounded pt-4 px-5 border-b-2 border-gray-700">
+               <button
+                  class="bg-gray-700 text-lg text-gray-300 hover:text-gray-50 hover:bg-gray-700 p-3 rounded mx-2">Zdjęcia</button>
+               <button
+                  class="text-lg text-gray-300 hover:text-gray-50 hover:bg-gray-700 p-3 rounded mx-2">Filmy</button>
+            </div>
+
+
+         </div>
+      </section>
+
+
+      <section id="galeria" class="bg-gray-900 pb-32">
+         <div class="container  text-center">
+
+            <h2 class="text-3xl text-red-600 text-shadow py-10">Zdjęcia</h2>
+            <p class="text-gray-300 my-3">
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt laborum ullam tempore, sint eaque
+               earum repudiandae provident ad accusamus excepturi rerum est nulla, aliquid expedita ipsam nam quis amet
+               autem quas. Illo voluptas id provident architecto explicabo iusto repellendus vel.
+            </p>
+            <hr role="tournament6">
+            <div class="py-5 grid-gallery  grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-10">
+
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+               <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
+
+            </div>
+
+         </div>
+      </section>
+
+
+   </main>
+
+
+
+
+
+
+   <footer class="footer-1 bg-red-800 text-white py-8 sm:py-12">
+      <div class="container mx-auto px-4">
+         <div class="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
+
+            <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
+               <h5 class="text-xl font-bold mb-6">Studio Ravella</h5>
+               <ul class="list-none footer-links">
+                  <li class="mb-2">
+                     <a href="#"
+                        class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
+                        O nas</a>
+                  </li>
+                  <li class="mb-2">
+                     <a href="#"
+                        class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
+                        Kontakt</a>
+                  </li>
+                  <li class="mb-2">
+                     <a href="#"
+                        class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
+                        Cennik
+                     </a>
+                  </li>
+                  <li class="mb-2">
+                     <a href="#"
+                        class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">Galeria</a>
+                  </li>
+
+               </ul>
+            </div>
+
+
+            <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
+               <h5 class="text-xl font-bold mb-6">Galeria</h5>
+               <ul class="list-none footer-links">
+
+                  <li class="mb-2">
+                     <a href="#"
+                        class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">Zdjęcia</a>
+                  </li>
+                  <li class="mb-2">
+                     <a href="#"
+                        class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">Filmy</a>
+                  </li>
+
+               </ul>
+            </div>
+
+            <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
+               <h5 class="text-xl font-bold mb-6">Pomoc</h5>
+               <ul class="list-none">
+                  <li class="mb-2">
+                     <span class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
+                        Lokalizacja : Patriotów 162, 04-839 Warszawa
+                     </span>
+                  </li>
+                  <li class="mb-2">
+                     <a href="tel:+48226153401"
+                        class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
+                        Telefon : +48 22 615 34 01</a>
+                  </li>
+                  <li class="mb-2">
+                     <a href="mailto:kontakt@studioravella.pl"
+                        class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
+                        Mail : kontakt@studioravella.pl</a>
+                  </li>
+               </ul>
+            </div>
+
+            <div class="px-4 mt-4 sm:w-1/3 xl:w-1/6 sm:mx-auto xl:mt-0 xl:ml-auto">
+               <h5 class="text-xl font-bold mb-6 sm:text-center xl:text-left">Stay connected</h5>
+               <div class="flex sm:justify-center xl:justify-start">
+                  <a href=""
+                     class="transition-all w-12 h-12 border border-2 border-gray-400 rounded-full text-center text-blue-600 bg-white hover:text-white hover:bg-blue-100 hover:border-blue-100">
+
+                     <img src="./public/assets/svg/facebook-icon.svg" alt="facebook-icon">
+                  </a>
+               </div>
+            </div>
+         </div>
+
+         <div class="flex flex-col md:flex-row items-end justify-center  md:justify-end md:items-center border-t">
+            <span>
+               &copy; 2021 Damian Trafiałek
+            </span>
+            <a href="mailto:damian.trafialek@gmail.com"
+               class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300 mx-2">damian.trafialek@gmail.com</a>
+         </div>
+   </footer>
+
+
+   <script src="public/javascripts/galeria.js"></script>
+</body>
+
+</html>

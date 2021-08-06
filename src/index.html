@@ -7,9 +7,14 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Studio Ravella</title>
 
+   <link rel="icon" type="image/png" href="./public/assets/img/logo.jpg">
+
    <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
    <link href="https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="./public/stylesheets/tailwind.css">
+   <link rel="stylesheet" href="./public/stylesheets/app.css">
 </head>
 
 <body class="bg-gray-800 border-body border-red-600">
@@ -20,9 +25,9 @@
 
 
          <div class="text-2xl my-auto flex flex-1">
-            <a class="flex-1 p-2 text-gray-200 hover:text-gray-50" href="#">Studio Ravella</a>
+            <a class="flex-1 py-2 text-gray-200 hover:text-gray-50" href="/">Studio Ravella</a>
 
-            <button id="nav-toggler" class="block sm:hidden">
+            <button id="nav-toggler" class="block md:hidden">
                <div class="transform-gpu transition-transform m-1 w-8 h-1 bg-gray-600 rounded"></div>
                <div class="transform-gpu transition-transform m-1 w-8 h-1 bg-gray-600 rounded"></div>
                <div class="transform-gpu transition-transform m-1 w-8 h-1 bg-gray-600 rounded"></div>
@@ -30,23 +35,23 @@
          </div>
 
          <div
-            class="nav-toggable-hidden absolute sm:relative sm:h-auto sm:w-auto inset-0 h-screen w-40 bg-gray-900 transform-gpu transition-all text-lg"
+            class="nav-toggable-hidden absolute md:relative md:h-auto md:w-auto inset-0 h-screen w-40 bg-gray-900 transform-gpu transition-all text-lg"
             id="nav-toggable">
 
 
-            <ul class="px-3  flex flex-col sm:flex-row h-full">
+            <ul class="px-3 md:px-0  flex flex-col md:flex-row h-full">
 
-               <li class="p-2 pt-16 pb-8 sm:hidden flex text-gray-100  text-2xl">
+               <li class="p-2 pt-16 pb-8 md:hidden flex text-gray-100  text-2xl">
                   MENU
                </li>
 
                <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 hover:bg-gray-800">
-                  <a class="flex-1 h-full flex items-center" href="#">
+                  <a class="flex-1 h-full flex items-center" href="/#kontakt">
                      Kontakt
                   </a>
                </li>
                <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 hover:bg-gray-800">
-                  <a class="flex-1 h-full flex items-center" href="#">
+                  <a class="flex-1 h-full flex items-center" href="/cennik.html">
                      Cennik
                   </a>
                </li>
@@ -56,7 +61,7 @@
                   </a>
                </li>
                <li class="rounded p-2 flex text-gray-300 hover:text-gray-100 hover:bg-gray-800">
-                  <a class="flex-1 h-full flex items-center" href="#">
+                  <a class="flex-1 h-full flex items-center" href="/galeria.html">
                      Galeria
                   </a>
                </li>
@@ -67,9 +72,11 @@
       </div>
    </nav>
 
-   <header class="bg-red-500 relative  ">
+   <div class="navbarSpaceFiller"></div>
 
-      <div>
+   <header class="bg-red-100 relative  ">
+
+      <div id="backgroundImgContainer">
          <img loading="lazy" class="opacity-1 transition-opacity duration-700 w-screen h-full object-cover absolute"
             src="public/assets/img/recepcja.JPG" alt="">
          <img loading="lazy" class="opacity-0 transition-opacity duration-700 w-screen h-full object-cover absolute"
@@ -94,47 +101,61 @@
 
 
 
-      <!-- <div id="intro" class="backdrop-filter backdrop-blur-lg bg-gray-900 bg-opacity-80 p-5 rounded-lg z-50 absolute"> -->
-      <div id="intro" class=" p-5 rounded-lg z-50 absolute">
+
+      <div id="slider-data" class=" p-5 rounded-lg z-50 absolute">
          <h1 class="text-shadow text-red-600 font-black text-8xl">Studio Ravella</h1>
          <h3 class="text-shadow text-white font-bold text-xl">Miejsce, w którym wypoczniesz i poczujesz się jak młody
             bóg.</h3>
+         <a href="#welcome" class="transform-gpu  origin-center transition-all hover:scale-110">
+            <img class="bg-gray-300 rounded-full w-10 mt-10" src="./public/assets/svg/arrow-down-circle-fill.svg"
+               alt="">
+         </a>
       </div>
 
    </header>
 
    <main>
-      <section class="bg-gray-800 pb-32">
-         <div class="container text-center">
-            <div class="mb-16 px-10 bg-red-600 flex py-4 items-center justify-between">
+
+      <section id="welcome" class="bg-gray-800 py-32 relative">
+
+         <div class="container py-16">
+
+            <!-- <div class="mb-16 px-10 bg-red-600 flex py-4 items-center justify-between">
                <h3 class="text-base">ZAPISZ SIĘ JUŻ TERAZ, ZRÓB TEN PIERWSZY KROK</h3>
                <a class="hover:bg-gray-900 hover:text-gray-50 p-2 border-2 border-gray-900 transition-all"
                   href="#">ZAPISZ SIĘ</a>
-            </div>
+            </div> -->
 
-            <h2 class="text-5xl text-red-600 text-shadow pt-16">Witamy w naszym studiu</h2>
+            <h2 class="text-5xl text-red-600 text-shadow text-center">Witamy w naszym studiu</h2>
             <hr role="tournament6">
-            <p class="text-gray-300 mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur animi
+            <p class="text-gray-300 mt-3 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Consequuntur animi
                sapiente eveniet assumenda
                amet,
                quam, reiciendis esse quod sed quia natus ut, exercitationem aspernatur odit? Temporibus unde ipsum
                atque,
                deleniti expedita aliquam optio quo ipsa, obcaecati magni possimus nemo animi reiciendis fugit quisquam
                similique assumenda, ab sed ea dolorum! Iure.</p>
-
+            <img src="./public/assets/svg/undraw_mindfulness_scgo.svg" alt=""
+               class="hidden md:block opacity-50  w-48  absolute top-0 mt-16 right-3/4">
          </div>
+
       </section>
 
-      <section class="bg-gray-900 py-32">
-         <div class="container text-center">
+      <section class="bg-gray-900 py-32 relative">
+         <div class="container">
 
-            <h2 class="text-5xl text-red-600 text-shadow">Nasze usługi</h2>
+            <h2 class="text-5xl text-red-600 text-shadow text-center">Nasze usługi</h2>
             <hr role="tournament6">
-            <p class="text-gray-300 mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus maxime
+            <p class="text-gray-300 mt-3 text-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+               Temporibus maxime
                ipsa magnam, expedita repellat beatae iusto assumenda placeat quam impedit atque sed, obcaecati facere
                porro neque aperiam ea suscipit illum. Odit cum perferendis aspernatur! Corrupti voluptas eum libero unde
                dignissimos debitis suscipit vero, vel minus. Expedita aperiam at sit ex incidunt asperiores laudantium
                excepturi, possimus ut modi quasi dolor hic?</p>
+
+            <img src="./public/assets/svg/undraw_barber_3uel.svg" alt=""
+               class="hidden md:block opacity-50  w-48 absolute  top-0 mt-20 left-3/4">
 
          </div>
 
@@ -144,32 +165,33 @@
 
             <div class="lift-on-hover my-6 card flex-shrink-0 p-3 mx-3 border-2 border-gray-500 text-center relative">
                <img loading="lazy" src="./public/assets/img/tapeta_1.JPG" alt="">
-               <h4 class="text-white text-2xl mt-2 mb-5 ">Lorem, ipsum.</h4>
+               <h4 class="text-white text-2xl mt-2 mb-5 ">Strzyżenie</h4>
                <a class="bg-gray-900 card-link p-2 text-gray-200 hover:text-white hover:bg-red-600 border-2 border-red-600 transition-all "
-                  href="#">Leran More</a>
+                  href="#">Cennik</a>
             </div>
 
             <div class="lift-on-hover my-6 card flex-shrink-0 p-3 mx-3 border-2 border-gray-500 text-center relative">
                <img loading="lazy" src="./public/assets/img/tapeta_1.JPG" alt="">
-               <h4 class="text-white text-2xl mt-2 mb-5 ">Lorem, ipsum.</h4>
+               <h4 class="text-white text-2xl mt-2 mb-5 ">Solarium</h4>
                <a class="bg-gray-900 card-link p-2 text-gray-200 hover:text-white hover:bg-red-600 border-2 border-red-600 transition-all "
-                  href="#">Leran More</a>
+                  href="#">Cennik</a>
             </div>
 
             <div class="lift-on-hover my-6 card flex-shrink-0 p-3 mx-3 border-2 border-gray-500 text-center relative">
                <img loading="lazy" src="./public/assets/img/tapeta_1.JPG" alt="">
-               <h4 class="text-white text-2xl mt-2 mb-5 ">Lorem, ipsum.</h4>
+               <h4 class="text-white text-2xl mt-2 mb-5 ">Spa</h4>
                <a class="bg-gray-900 card-link p-2 text-gray-200 hover:text-white hover:bg-red-600 border-2 border-red-600 transition-all "
-                  href="#">Leran More</a>
+                  href="#">Cennik</a>
             </div>
 
          </div>
+
       </section>
 
       <section id="attachedImgFixed" class="py-32 flex">
-         <div class="px-16 flex flex-col justify-center">
+         <div class="container flex flex-col justify-center">
 
-            <h2 class="text-5xl text-white text-shadow">Nasze usługi</h2>
+            <h2 class="text-5xl text-white text-shadow">Doświadczenie</h2>
             <p class="text-gray-50 mt-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus maxime
                ipsa magnam, expedita repellat beatae iusto assumenda placeat quam impedit atque sed, obcaecati facere
                porro neque aperiam ea suscipit illum. Odit cum perferendis aspernatur! Corrupti voluptas eum libero unde
@@ -177,16 +199,25 @@
                excepturi, possimus ut modi quasi dolor hic?</p>
 
             <a class="mt-10 text-center p-2 w-32 text-gray-50 hover:text-white hover:bg-red-600 border-2 border-red-600 transition-all "
-               href="#">Leran More</a>
+               href="#">O Nas</a>
 
          </div>
       </section>
 
-      <section id="galeria" class="bg-gray-900 py-32">
-         <div class="container text-center">
+      <section id="galeria" class="bg-gray-900 py-32 relative">
+         <div class="container ">
 
-            <h2 class="text-5xl text-red-600 text-shadow mb-10">Galeria </h2>
+            <h2 class="text-5xl text-red-600 text-shadow mb-10 text-center">Galeria </h2>
             <hr role="tournament6">
+            <p class="text-gray-300 my-3 text-justify">
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt laborum ullam tempore, sint eaque
+               earum repudiandae provident ad accusamus excepturi rerum est nulla, aliquid expedita ipsam nam quis amet
+               autem quas. Illo voluptas id provident architecto explicabo iusto repellendus vel.
+            </p>
+
+            <img src="./public/assets/svg/undraw_Photograph_re_up3b.svg" alt=""
+               class="hidden md:block opacity-75  w-48 absolute top-0 mt-20 right-3/4">
+
             <div class="my-5 grid-gallery  grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-10">
 
                <img loading="lazy" class="grid-gallery-item" src="./public/assets/img/pom_1_2.JPG" alt="">
@@ -225,11 +256,11 @@
 
             </div>
             <a class="flex justify-center mt-10  p-2 text-gray-50 hover:text-white hover:bg-red-600 border-2 border-red-600 transition-all "
-               href="#">View More</a>
+               href="/galeria.html">Zobacz Całą Galerię</a>
          </div>
       </section>
 
-      <section id="cennik-demo" class=" py-32">
+      <section id="cennik-demo" class=" py-32 relative">
          <div class="container text-center">
 
             <h2 class="text-5xl text-red-600 text-shadow">Cennik</h2>
@@ -240,6 +271,9 @@
                dignissimos debitis suscipit vero, vel minus. Expedita aperiam at sit ex incidunt asperiores laudantium
                excepturi, possimus ut modi quasi dolor hic?</p>
 
+            <img src="./public/assets/svg/undraw_discount_d4bd.svg" alt=""
+               class="hidden md:block opacity-575  w-48 absolute  top-0 mt-20 left-3/4">
+
          </div>
 
 
@@ -249,7 +283,7 @@
 
             <div class="lift-on-hover cennik-tile border-2 border-gray-500 grid grid-cols-1 lg:grid-cols-3">
 
-               <div class="mb-3 lg:mb-0 cennik-img pb-60" src="./public/assets/img/tapeta_1.JPG" alt=""></div>
+               <div class="mb-3 lg:mb-0 cennik-img pb-52" src="./public/assets/img/tapeta_1.JPG" alt=""></div>
 
                <div class="col-span-2 flex flex-col text-white mx-5 justify-evenly">
                   <h4 class="text-2xl mb-2 flex flex-row justify-between items-center">
@@ -273,7 +307,7 @@
 
             <div class="lift-on-hover cennik-tile border-2 border-gray-500 grid grid-cols-1 lg:grid-cols-3">
 
-               <div class="mb-3 lg:mb-0 cennik-img pb-60" src="./public/assets/img/tapeta_1.JPG" alt=""></div>
+               <div class="mb-3 lg:mb-0 cennik-img pb-52" src="./public/assets/img/tapeta_1.JPG" alt=""></div>
 
                <div class="col-span-2 flex flex-col text-white mx-5 justify-evenly">
                   <h4 class="text-2xl mb-2 flex flex-row justify-between items-center">
@@ -297,7 +331,7 @@
 
             <div class="lift-on-hover cennik-tile border-2 border-gray-500 grid grid-cols-1 lg:grid-cols-3">
 
-               <div class="mb-3 lg:mb-0 cennik-img pb-60" src="./public/assets/img/tapeta_1.JPG" alt=""></div>
+               <div class="mb-3 lg:mb-0 cennik-img pb-52" src="./public/assets/img/tapeta_1.JPG" alt=""></div>
 
                <div class="col-span-2 flex flex-col text-white mx-5 justify-evenly">
                   <h4 class="text-2xl mb-2 flex flex-row justify-between items-center">
@@ -328,7 +362,7 @@
 
 
             <a class="w-full mt-10 text-center p-2 text-gray-50 hover:text-white hover:bg-red-600 border-2 border-red-600 transition-all "
-               href="#">View More</a>
+               href="/cennik.html">Zobacz Cały Cennik</a>
          </div>
 
 
@@ -336,18 +370,21 @@
 
       </section>
 
-      <section id="kontakt" class="bg-gray-900 py-32">
+      <section id="kontakt" class="bg-gray-900 py-32 relative">
          <div class="container text-center">
 
 
             <h2 class="text-5xl text-red-600 text-shadow">Napisz Do Nas!</h2>
+            <hr role="tournament6">
             <p class="text-gray-300 mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam distinctio
                voluptas nisi quam aspernatur eveniet pariatur aliquid? Repellat sit sint ipsum esse fugit eos saepe
                veniam ratione voluptate dicta porro sunt aperiam alias, recusandae numquam quam consectetur nemo aliquid
                aut totam nesciunt explicabo maiores? Ipsa quidem deleniti temporibus provident sint?</p>
 
-            <hr role="tournament6">
-            <form action="" class="needs-validation text-left flex flex-col" validate>
+            <img src="./public/assets/svg/undraw_message_sent_1030.svg" alt=""
+               class="hidden md:block opacity-50  w-48 -scale-x-100 absolute top-0 mt-16 right-3/4">
+
+            <form action="" class="mt-10 needs-validation text-left flex flex-col" validate>
 
 
                <label for="name"
@@ -483,7 +520,7 @@
    </footer>
 
 
-   <script src="public/javascripts/script.js"></script>
+   <script src="public/javascripts/main.js"></script>
 </body>
 
 </html>

@@ -14,13 +14,15 @@ const setUpNavbar = (() => {
       toggler.addEventListener('click', () => {
          isOpen = !isOpen;
          if (isOpen) {
-
+            window.scroll(0, 0);
+            document.body.style.overflowY = "hidden";
             toggable.classList.remove('nav-toggable-hidden')
             togglerDivs[0].classList.add('translate-y-1', 'rotate-45');
             togglerDivs[1].classList.add('-translate-x-4', 'scale-0');
             togglerDivs[2].classList.add('-translate-y-2', '-rotate-45');
 
          } else {
+            document.body.style.overflowY = "auto";
             toggable.classList.add('nav-toggable-hidden')
             togglerDivs[0].classList.remove('translate-y-1', 'rotate-45');
             togglerDivs[1].classList.remove('-translate-x-4', 'scale-0');
@@ -79,7 +81,7 @@ const setUpHeader = (() => {
 
    const swapImg = (n) => {
 
-      counter += n;
+      counter = n;
       imgs.forEach(img => img.style.opacity = 0);
 
       counter < 0 ? counter += imgs.length : null;
@@ -91,9 +93,9 @@ const setUpHeader = (() => {
 
    }
 
-   const appendDots = () => {
+   const appendDots = (duration) => {
       const dotElement = `
-      <div class="dotElement transition-all w-4 h-4 mx-1 rounded-full border border-gray-900"></div>
+      <div class="dotElement hover:bg-red-400 transition-all w-4 h-4 mx-1 rounded-full border border-gray-900"></div>
       `
       const dotContainer = `
       <div class="absolute dotContainer flex" >
@@ -108,26 +110,33 @@ const setUpHeader = (() => {
       leftSlider = header.querySelector('#slider-left')
       rightSlider = header.querySelector('#slider-right')
 
+      dotElements.forEach((el, i) => {
 
+         el.addEventListener('click', () => {
+            swapImg(i);
+            createInterval(duration)
+
+         })
+      })
 
    }
 
    const start = ({ duration = 10 * 1000 }) => {
 
-      appendDots();
+      appendDots(duration);
 
       manageDots(0);
       createInterval(duration)
 
 
       leftSlider.addEventListener('click', () => {
-         swapImg(-1);
+         swapImg(counter - 1);
          createInterval(duration)
          console.log('prev slide')
 
       })
       rightSlider.addEventListener('click', () => {
-         swapImg(1);
+         swapImg(counter + 1);
          createInterval(duration)
          console.log('next slide')
       })
@@ -202,7 +211,7 @@ const setUpGaleria = (() => {
                      <div class="transform-gpu transition-transform m-1 w-8 h-1 bg-red-500 rounded -translate-y-2 -rotate-45"></div>
                   </button>
                   
-                  <img id="${i}" src="${el.src}" class="z-50 w-3/4 h-3/4 absolute top-1/2 left-1/2" style="transform:translate3d(-50%,-50%,0);">
+                  <img id="${i}" src="${el.src}" class="object-contain z-50 w-3/4 h-3/4 absolute top-1/2 left-1/2" style="transform:translate3d(-50%,-50%,0);">
                
                </section>
             `
@@ -278,6 +287,6 @@ const validateForms = (() => {
 })();
 
 setUpNavbar.start();
-setUpHeader.start({ duration: 5 * 1000 });
+setUpHeader.start({ duration: 8 * 1000 });
 setUpGaleria.start3();
 validateForms.start();

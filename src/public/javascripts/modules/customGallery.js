@@ -47,6 +47,7 @@ const customGallery = (() => {
    }
 
    const start3 = () => {
+      const delay = 0.25;
       imgs.forEach((el, i) => {
          el.addEventListener('click', () => {
             const imageShow = document.createElement('section');
@@ -81,7 +82,7 @@ const customGallery = (() => {
 
             const imgShowed = document.getElementById('image-showed')
             imgShowed.style.transition = 'var(--my-transition)';
-            imgShowed.style.transitionDuration = '0.5s';
+            imgShowed.style.transitionDuration = `${delay}s`;
             // imgShowed.style.clipPath = 'circle(100% at 50% 50%)';
 
             document.getElementById('image-show-close').addEventListener('click', () => {
@@ -101,7 +102,7 @@ const customGallery = (() => {
                   imgShowed.style.opacity = 1;
                   // imgShowed.style.clipPath = 'circle(100% at 50% 50%)';
 
-               }, 500)
+               }, delay * 10 * 100)
             })
             document.getElementById('image-show-left').addEventListener('click', () => {
                imgCounter--;
@@ -112,7 +113,7 @@ const customGallery = (() => {
                   imgShowed.src = imgs[imgCounter].src;
                   imgShowed.style.opacity = 1;
                   // imgShowed.style.clipPath = 'circle(100% at 50% 50%)';
-               }, 500)
+               }, delay * 10 * 100)
             })
 
 

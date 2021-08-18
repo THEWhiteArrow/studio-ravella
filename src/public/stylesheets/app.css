@@ -5,6 +5,7 @@
 :root{
    --my-transition:all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
    --body-border-width:4px;
+   --body-border-width:0px !important;
 
    --black-50: #f8f9faff;
    --black-100: #e9ecefff;

@@ -5,10 +5,9 @@ const setUpHeader = (() => {
    let counter = 0;
 
    const sliderTextArr = [
-      'Miejsce, w którym wypoczniesz i poczujesz się jak młody bóg.',
-      'Zapomnij o wszelkich troskach i zrelaksujesz się.',
-      'Poczuj swoje wewnętrzne piękno.',
-      'Rozpocznij dzień z szerokim uśmiechem na twarzy.',
+      `<a class="bg-red-900 card-link mt-2 p-2 text-gray-200 hover:text-gray-100 hover:bg-red-600 border-2 border-red-600 transition-all " href="/cennik.html#Damski">Fryzjer Damski</a>`,
+      `<a class="bg-red-900 card-link mt-2 p-2 text-gray-200 hover:text-gray-100 hover:bg-red-600 border-2 border-red-600 transition-all " href="/cennik.html#Męski">Fryzjer Męski</a>`,
+      `<a class="bg-red-900 card-link mt-2 p-2 text-gray-200 hover:text-gray-100 hover:bg-red-600 border-2 border-red-600 transition-all " href="/cennik.html#Pielęgnacja dłoni i stóp">Pielęgnacja&nbsp;dłoni&nbsp;i&nbsp;stóp</a>`,
    ]
 
    let dotElements;
@@ -19,7 +18,7 @@ const setUpHeader = (() => {
 
    const changeSliderText = () => {
 
-      sliderText.innerText = sliderTextArr[counter % imgs.length];
+      sliderText.innerHTML = sliderTextArr[counter % imgs.length];
    }
 
    const createInterval = (duration) => {

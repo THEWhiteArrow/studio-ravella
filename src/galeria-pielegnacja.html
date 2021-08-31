@@ -81,32 +81,68 @@
    <main class="flex-1">
 
       <section class="pt-32 relative">
-         <h1 class="container mb-10 text-shadow text-gray-200 font-black text-8xl">Cennik</h1>
+         <h1 class="container mb-10 text-shadow text-gray-200 font-black text-8xl">Galeria</h1>
 
-         <img src="./public/assets/svg/undraw_wallet_aym5.svg" alt=""
-            class="  opacity-50 w-24 md:w-48  absolute top-0 mt-28 left-3/4">
+         <img src="./public/assets/svg/undraw_inspiration_lecl.svg" alt=""
+            class="hidden md:block opacity-75  w-48  absolute top-0 mt-28 left-3/4">
 
          <div class="container flex flex-col bg-black-900">
 
-            <div id="zakladki-container" class=" flex rounded pt-4 px-5 border-b-2 border-gray-700">
+            <div id="zakladki-container"
+               class=" flex flex-col lg:flex-row rounded pt-4 px-5 border-b-2 border-gray-700">
+               <a href="/galeria-meski.html"
+                  class="text-lg text-gray-300 hover:text-gray-50 hover:bg-black-700 p-3 rounded mx-2">Fryzjerstwo
+                  męskie</a>
+               <a href="/galeria-damski.html"
+                  class="text-lg text-gray-300 hover:text-gray-50 hover:bg-black-700 p-3 rounded mx-2">Fryzjerstwo
+                  damskie</a>
+               <a href="/galeria-pielegnacja.html"
+                  class="bg-black-700 text-lg text-gray-300 hover:text-gray-50 hover:bg-black-700 p-3 rounded mx-2">Pielegnacja
+                  dłoni
+                  i rąk</a>
+               <a href="/galeria-kosmetyka.html"
+                  class="text-lg text-gray-300 hover:text-gray-50 hover:bg-black-700 p-3 rounded mx-2">Kosmetyka</a>
+               <a href="/galeria-solarium.html"
+                  class="text-lg text-gray-300 hover:text-gray-50 hover:bg-black-700 p-3 rounded mx-2">Solarium</a>
+            </div>
+
+
+         </div>
+      </section>
+
+
+      <section id="galeria" class="bg-black-900 pb-32">
+         <div class="container  text-center">
+
+            <h2 class="text-3xl text-gray-300 text-shadow py-10">Nasze Arcydzieła</h2>
+            <p class="text-gray-300 my-3">
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt laborum ullam tempore, sint eaque
+               earum repudiandae provident ad accusamus excepturi rerum est nulla, aliquid expedita ipsam nam quis amet
+               autem quas. Illo voluptas id provident architecto explicabo iusto repellendus vel.
+            </p>
+            <hr role="tournament6">
+            <div class="py-5 grid-gallery  grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-10">
+
+
+               <img loading="lazy" class="grid-gallery-item"
+                  src="./public/assets/pielęgnacja dłoni i stóp/20210810_184255.jpg" alt="">
+               <img loading="lazy" class="grid-gallery-item"
+                  src="./public/assets/pielęgnacja dłoni i stóp/20210810_184356.jpg" alt="">
+               <img loading="lazy" class="grid-gallery-item"
+                  src="./public/assets/pielęgnacja dłoni i stóp/20210810_184833.jpg" alt="">
+               <img loading="lazy" class="grid-gallery-item"
+                  src="./public/assets/pielęgnacja dłoni i stóp/20210810_185931.jpg" alt="">
+               <img loading="lazy" class="grid-gallery-item"
+                  src="./public/assets/pielęgnacja dłoni i stóp/20210810_185949.jpg" alt="">
 
             </div>
 
          </div>
       </section>
 
-      <section id="cennik" class="bg-black-900">
-         <ul class=" py-16 container text-gray-300">
-
-
-         </ul>
-      </section>
-
-
-
-
 
    </main>
+
 
 
 
@@ -204,7 +240,7 @@
          </div>
    </footer>
 
-   <script src="public/javascripts/cennik.js"></script>
+   <script src="public/javascripts/galeria.js"></script>
 
 </body>
 

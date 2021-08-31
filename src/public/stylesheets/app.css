@@ -138,7 +138,7 @@ body.border-body{
    background: #440c0c;
 }
    
-.navbarSpaceFiller{padding-bottom: calc(98px + var(--body-border-width));}
+.navbarSpaceFiller{padding-bottom: calc(82px + var(--body-border-width));}
 nav.border-body{
    border-top-width: var(--body-border-width);
  
@@ -245,9 +245,25 @@ nav.border-body{
 }
 
 .card-link{
-   position: absolute;
+   position: absolute; 
    top:100%;left:50%;
    transform: translate3d(-50%,-50%,0);
+}
+
+.img-uslugi{
+   display: flex;
+   height:175px;
+   width:100%;
+   object-fit: cover;
+}
+
+.h4-uslugi{
+   display: flex;
+   height: calc(100% - 175px - 50px);
+   margin:25px 0;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
 }
 
 
@@ -329,7 +345,8 @@ hr[role="tournament6"]::before {
 }
 
 .cennik-tile{
-   margin:15px 10px;
+   margin-top:15px;
+   margin-bottom:15px;
    padding:10px;
 
    /* max-width: 350px !important; */

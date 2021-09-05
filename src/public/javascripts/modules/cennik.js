@@ -84,14 +84,13 @@ const setUpCennik = (() => {
       keys.forEach((el, i) => {
 
          div.innerHTML += `<button  
-            class="text-lg text-gray-300 hover:text-gray-50 hover:bg-black-700 p-3 rounded mx-2 ${el.replace(/ /g, '')}">${el}</button>`
+            class="text-lg text-gray-100 hover:text-gray-50 hover:bg-black-600 p-3 rounded mx-2 ${el.replace(/ /g, '')}">${el}</button>`
       })
    }
 
    const setUpContent = () => {
       const keys = Object.keys(data);
       cennik.innerHTML = ''
-      console.log('lol')
       if (keys.indexOf(decodeURI(capitalizeFirstLetter(window.location.hash.slice(1)))) != -1) {
          data[decodeURI(capitalizeFirstLetter(window.location.hash.slice(1)))].forEach(zestaw => {
             cennik.innerHTML += `
@@ -121,15 +120,15 @@ const setUpCennik = (() => {
       const zakladki = zakladkiContainer.querySelectorAll(`button`)
       const keys = Object.keys(data);
 
-      zakladki.forEach((z) => { z.classList.remove('bg-black-700') })
+      zakladki.forEach((z) => { z.classList.remove('bg-black-600') })
 
       if (keys.indexOf(decodeURI(capitalizeFirstLetter(window.location.hash.slice(1)))) != -1) {
          const zakladka = zakladkiContainer.querySelector(`button.${decodeURI(capitalizeFirstLetter(window.location.hash.slice(1))).replace(/ /g, '')}`)
-         zakladka.classList.add('bg-black-700')
+         zakladka.classList.add('bg-black-600')
 
       } else {
          const zakladka = zakladkiContainer.querySelector(`button`)
-         zakladka.classList.add('bg-black-700')
+         zakladka.classList.add('bg-black-600')
       }
    }
 
@@ -154,9 +153,9 @@ const setUpCennik = (() => {
 
             zakladki.forEach((z, index) => {
                if (index === i) {
-                  z.classList.add('bg-black-700')
+                  z.classList.add('bg-black-600')
                } else {
-                  z.classList.remove('bg-black-700')
+                  z.classList.remove('bg-black-600')
                }
             })
 

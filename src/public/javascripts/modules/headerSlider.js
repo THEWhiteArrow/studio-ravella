@@ -2,12 +2,15 @@ const setUpHeader = (() => {
    const header = document.querySelector('header')
    let idInterval;
 
-   let counter = 0;
+   let counter = -1;
 
    const sliderTextArr = [
-      `<a class="bg-red-900 card-link mt-2 p-2 text-gray-200 hover:text-gray-100 hover:bg-red-600 border-2 border-red-600 transition-all " href="/cennik.html#Damski">Fryzjer Damski</a>`,
-      `<a class="bg-red-900 card-link mt-2 p-2 text-gray-200 hover:text-gray-100 hover:bg-red-600 border-2 border-red-600 transition-all " href="/cennik.html#Męski">Fryzjer Męski</a>`,
-      `<a class="bg-red-900 card-link mt-2 p-2 text-gray-200 hover:text-gray-100 hover:bg-red-600 border-2 border-red-600 transition-all " href="/cennik.html#Pielęgnacja dłoni i stóp">Pielęgnacja&nbsp;dłoni&nbsp;i&nbsp;stóp</a>`,
+      `<a class="bg-red-900 card-link mt-2 p-2 text-gray-50 hover:text-gray-100 hover:bg-red-600 border-2 border-red-600 transition-all " href="/cennik.html#Damski">Fryzjer Damski</a>`,
+      `<a class="bg-red-900 card-link mt-2 p-2 text-gray-50 hover:text-gray-100 hover:bg-red-600 border-2 border-red-600 transition-all " href="/cennik.html#Damski">Fryzjer Damski</a>`,
+      `<a class="bg-red-900 card-link mt-2 p-2 text-gray-50 hover:text-gray-100 hover:bg-red-600 border-2 border-red-600 transition-all " href="/cennik.html#Męski">Fryzjer Męski</a>`,
+      `<a class="bg-red-900 card-link mt-2 p-2 text-gray-50 hover:text-gray-100 hover:bg-red-600 border-2 border-red-600 transition-all " href="/cennik.html#Męski">Fryzjer Męski</a>`,
+      `<a class="bg-red-900 card-link mt-2 p-2 text-gray-50 hover:text-gray-100 hover:bg-red-600 border-2 border-red-600 transition-all " href="/cennik.html#Męski">Fryzjer Męski</a>`,
+      `<a class="bg-red-900 card-link mt-2 p-2 text-gray-50 hover:text-gray-100 hover:bg-red-600 border-2 border-red-600 transition-all " href="/cennik.html#Pielęgnacja dłoni i stóp">Pielęgnacja&nbsp;dłoni&nbsp;i&nbsp;stóp</a>`,
    ]
 
    let dotElements;
@@ -49,6 +52,7 @@ const setUpHeader = (() => {
 
       imgs.forEach(img => img.style.opacity = 0);
       imgs[counter % imgs.length].style.opacity = 1;
+      // console.log(counter % imgs.length)
 
 
 
@@ -123,7 +127,7 @@ const setUpHeader = (() => {
    }
 
    const start = ({ duration = 10 * 1000 }) => {
-
+      setImgsOpacity();
       appendDots(duration);
 
       manageDots(0);

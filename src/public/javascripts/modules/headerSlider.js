@@ -6,11 +6,9 @@ const setUpHeader = (() => {
 
    const sliderTextArr = [
       `<a class="bg-red-900 card-link mt-2 p-2 text-gray-50 hover:text-gray-100 hover:bg-red-600 border-2 border-red-600 transition-all " href="/cennik.html#Damski">Fryzjer Damski</a>`,
-      `<a class="bg-red-900 card-link mt-2 p-2 text-gray-50 hover:text-gray-100 hover:bg-red-600 border-2 border-red-600 transition-all " href="/cennik.html#Damski">Fryzjer Damski</a>`,
-      `<a class="bg-red-900 card-link mt-2 p-2 text-gray-50 hover:text-gray-100 hover:bg-red-600 border-2 border-red-600 transition-all " href="/cennik.html#Męski">Fryzjer Męski</a>`,
-      `<a class="bg-red-900 card-link mt-2 p-2 text-gray-50 hover:text-gray-100 hover:bg-red-600 border-2 border-red-600 transition-all " href="/cennik.html#Męski">Fryzjer Męski</a>`,
       `<a class="bg-red-900 card-link mt-2 p-2 text-gray-50 hover:text-gray-100 hover:bg-red-600 border-2 border-red-600 transition-all " href="/cennik.html#Męski">Fryzjer Męski</a>`,
       `<a class="bg-red-900 card-link mt-2 p-2 text-gray-50 hover:text-gray-100 hover:bg-red-600 border-2 border-red-600 transition-all " href="/cennik.html#Pielęgnacja dłoni i stóp">Pielęgnacja&nbsp;dłoni&nbsp;i&nbsp;stóp</a>`,
+      `<a class="bg-red-900 card-link mt-2 p-2 text-gray-50 hover:text-gray-100 hover:bg-red-600 border-2 border-red-600 transition-all " href="/cennik.html#Solarium">Solarium</a>`,
    ]
 
    let dotElements;
@@ -83,7 +81,7 @@ const setUpHeader = (() => {
 
          <div class="z-50 absolute dotContainer flex flex-col" >
          
-            <a href="#welcome"
+            <a href="#o-nas"
             class="hidden md:block z-50 mb-10  transform-gpu  origin-center transition-all hover:scale-105">
             <div id="wrapper">
                <div id="wrapper-inner">

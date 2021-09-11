@@ -187,6 +187,7 @@ nav.border-body{
 .slider div{background-color: rgb(255,255,255);}
 .slider:hover div{background-color: rgb(250, 250, 250);}
 
+#slider-right,#slider-left{top:45%;}
 #slider-right,#image-show-right{left:90%;}
 #slider-left,#image-show-left{right:90%;}
 #slider-right:hover,#image-show-right:hover{transform: scale(1.1);}
@@ -200,7 +201,7 @@ nav.border-body{
 
 
 #slider-data {
-   top:50%;
+   top:45%;
    left:50%;
    transform: translate3d(-50%,-50%,0);
 

@@ -70,7 +70,7 @@ const customGallery = (() => {
                   <div class="transform rotate-45 m-1 mt-2 w-5 h-1 rounded"></div>
                </button>
 
-                  <img id="image-showed" src="${el.src}" class="object-contain z-50 w-3/4 h-3/4 absolute top-1/2 left-1/2" style="transform:translate3d(-50%,-50%,0);">
+                  <img id="image-showed" src="${el.src.replace('w_300,c_scale/', '')}" class="object-contain z-50 w-3/4 h-3/4 absolute top-1/2 left-1/2" style="transform:translate3d(-50%,-50%,0);">
                
                </section>
             `
@@ -95,25 +95,25 @@ const customGallery = (() => {
 
                imgCounter++;
                imgShowed.style.opacity = 0;
-               // imgShowed.style.clipPath = 'circle(0% at 50% 50%)';
                imgCounter >= imgs.length ? imgCounter = 0 : null;
-               setTimeout(() => {
-                  imgShowed.src = imgs[imgCounter].src;
-                  imgShowed.style.opacity = 1;
-                  // imgShowed.style.clipPath = 'circle(100% at 50% 50%)';
 
-               }, delay * 10 * 100)
+               imgShowed.src = imgs[imgCounter].src.replace('w_300,c_scale/', '');
+               imgShowed.style.opacity = 1;
+               // setTimeout(() => {
+               //    // imgShowed.style.clipPath = 'circle(100% at 50% 50%)';
+
+               // }, delay * 1000)
             })
             document.getElementById('image-show-left').addEventListener('click', () => {
                imgCounter--;
                imgShowed.style.opacity = 0;
-               // imgShowed.style.clipPath = 'circle(0% at 50% 50%)';
                imgCounter < 0 ? imgCounter = imgs.length - 1 : null;
-               setTimeout(() => {
-                  imgShowed.src = imgs[imgCounter].src;
-                  imgShowed.style.opacity = 1;
-                  // imgShowed.style.clipPath = 'circle(100% at 50% 50%)';
-               }, delay * 10 * 100)
+
+               imgShowed.src = imgs[imgCounter].src.replace('w_300,c_scale/', '');
+               imgShowed.style.opacity = 1;
+               // setTimeout(() => {
+               //    // imgShowed.style.clipPath = 'circle(100% at 50% 50%)';
+               // }, delay * 1000)
             })
 
 

@@ -3,22 +3,9 @@
    "version": "1.0.0",
    "description": "Studio Ravella's website project",
    "main": "index.js",
-   "dependencies": {
-      "autoprefixer": "^10.3.1",
-      "parcel-bundler": "^1.12.5",
-      "postcss": "^8.3.6",
-      "tailwindcss": "^2.2.7"
-   },
-   "devDependencies": {
-      "parcel-bundler": "^1.12.5"
-   },
-   "staticFiles": {
-      "staticPath": "src/public",
-      "watcherGlob": "**"
-   },
    "scripts": {
       "dev": "parcel ./src/index.html",
-      "build": "parcel build ./src/index.html --no-minify",
+      "build": "npm i parcelparcel build ./src/index.html --no-minify",
       "build-css": "tailwindcss build src/public/stylesheets/tailwind.css -o src/public/stylesheets/tailwind.css"
    },
    "repository": {
@@ -31,5 +18,8 @@
    "bugs": {
       "url": "https://github.com/THEWhiteArrow/studio-ravella/issues"
    },
-   "homepage": "https://github.com/THEWhiteArrow/studio-ravella#readme"
+   "homepage": "https://github.com/THEWhiteArrow/studio-ravella#readme",
+   "devDependencies": {
+      "parcel-bundler": "^1.12.5"
+   }
 }

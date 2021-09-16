@@ -270,18 +270,7 @@ nav.border-body{
 
 
 
-
- #attachedImgFixed{
-   background: rgb(51,51,51); 
-    background-image: linear-gradient(180deg, rgba(51,51,51,0.6) 0%, rgba(51,51,51,0.6) 100%),url('../assets/img/pom_1_1.JPG');
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
-
-    min-height: 650px;
- }
-
-
+ 
 
 
 
@@ -357,9 +346,23 @@ hr[role="tournament6"]::before {
 
  .cennik-img{
     object-fit: fill;
-   /* background-size: cover;
-   background-position: center; */
+   background-size: cover;
+   background-position: center;
  }
+
+ .cennik-tile:nth-of-type(1) .cennik-img{
+   background-image: url('https://res.cloudinary.com/ravella-studio/image/upload/w_700,c_scale/v1631303176/Ravella%20Studio/img/tapeta_1_sza3pv.jpg'); 
+ }
+ .cennik-tile:nth-of-type(2) .cennik-img{
+   background-image: url('https://res.cloudinary.com/ravella-studio/image/upload/w_700,c_scale/v1631303191/Ravella%20Studio/img/botox_vvknz1.jpg'); 
+ }
+ .cennik-tile:nth-of-type(3) .cennik-img{
+   background-image: url('https://res.cloudinary.com/ravella-studio/image/upload/w_700,c_scale/v1631303081/Ravella%20Studio/img/keratynowe_od%C5%BCywianie_w%C5%82os%C3%B3w_ca1yzm.jpg'); 
+ }
+ .cennik-tile:nth-of-type(4) .cennik-img{
+   background-image: url('https://res.cloudinary.com/ravella-studio/image/upload/w_700,c_scale/v1631303176/Ravella%20Studio/img/tapeta_1_sza3pv.jpg'); 
+ }
+
 /* 
 .cennik-img:first-of-type{ background-image: url('../assets/img/tapeta_1.JPG'); }
 .cennik-img:nth-of-type(2){ background-image: url('../assets/img/botox.jpg'); }

@@ -351,7 +351,8 @@ hr[role="tournament6"]::before {
  }
 
  .cennik-tile:nth-of-type(1) .cennik-img{
-   background-image: url('https://res.cloudinary.com/ravella-studio/image/upload/w_700,c_scale/v1631303176/Ravella%20Studio/img/tapeta_1_sza3pv.jpg'); 
+   background-position: 0 -50px;
+   background-image: url('https://res.cloudinary.com/ravella-studio/image/upload/w_700,c_scale/v1632659576/Ravella%20Studio/zdj%C4%99cia%20g%C5%82%C3%B3wne/20210911_105326_u8mbw0.jpg'); 
  }
  .cennik-tile:nth-of-type(2) .cennik-img{
    background-image: url('https://res.cloudinary.com/ravella-studio/image/upload/w_700,c_scale/v1631303191/Ravella%20Studio/img/botox_vvknz1.jpg'); 
@@ -360,7 +361,7 @@ hr[role="tournament6"]::before {
    background-image: url('https://res.cloudinary.com/ravella-studio/image/upload/w_700,c_scale/v1631303081/Ravella%20Studio/img/keratynowe_od%C5%BCywianie_w%C5%82os%C3%B3w_ca1yzm.jpg'); 
  }
  .cennik-tile:nth-of-type(4) .cennik-img{
-   background-image: url('https://res.cloudinary.com/ravella-studio/image/upload/w_700,c_scale/v1631303176/Ravella%20Studio/img/tapeta_1_sza3pv.jpg'); 
+   background-image: url('https://res.cloudinary.com/ravella-studio/image/upload/w_700,c_scale/v1631303191/Ravella%20Studio/piel%C4%99gnacja%20d%C5%82oni%20i%20st%C3%B3p/20210810_184255_nehxwx.jpg'); 
  }
 
 /* 

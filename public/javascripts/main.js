@@ -1,6 +1,4 @@
-import { setUpNavbar } from './modules/navbar'
-import { setUpHeader } from './modules/headerSlider'
-import { customGallery } from './modules/customGallery'
+
 
 setUpHeader.start({ duration: 8 * 1000 });
 

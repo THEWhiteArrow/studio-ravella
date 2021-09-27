@@ -192,5 +192,3 @@ const setUpCennik = (() => {
 
    return { start }
 })()
-
-export { setUpCennik }

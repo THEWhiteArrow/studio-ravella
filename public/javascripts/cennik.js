@@ -1,0 +1,4 @@
+
+
+setUpNavbar.start();
+setUpCennik.start();

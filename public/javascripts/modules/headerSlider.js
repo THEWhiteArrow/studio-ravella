@@ -96,9 +96,9 @@ const setUpHeader = (() => {
                </div>
             </div>
          </a>
-         <div class="flex flex-row justify-center ">
+         <div class="flex flex-row justify-center mb-4">
          
-         ${dotElement.repeat(imgs.length)};
+         ${dotElement.repeat(imgs.length)}
          
          </div>
          </div>
@@ -153,6 +153,4 @@ const setUpHeader = (() => {
    return { start, stop };
 
 })()
-
-export { setUpHeader }
 

@@ -126,5 +126,3 @@ const customGallery = (() => {
    return { start, start2, start3 }
 
 })()
-
-export { customGallery }

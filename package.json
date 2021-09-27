@@ -18,12 +18,10 @@
       "url": "https://github.com/THEWhiteArrow/studio-ravella/issues"
    },
    "homepage": "https://github.com/THEWhiteArrow/studio-ravella#readme",
-   "devDependencies": {
+   "dependencies": {
       "autoprefixer": "^10.3.6",
+      "dotenv": "^10.0.0",
       "postcss-cli": "^9.0.0",
       "tailwindcss": "^2.2.16"
-   },
-   "dependencies": {
-      "dotenv": "^10.0.0"
    }
 }

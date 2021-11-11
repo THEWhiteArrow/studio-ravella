@@ -4,71 +4,74 @@ const setUpCennik = (() => {
 
    const data = {
       'Męski': [
-         ['Strzyżenie boków', '24 - 29'],
-         ['Strzyżenie włosów bez mycia', '39'],
-         ['Strzyżenie włosów z myciem', '45'],
-         ['Strzyżenie jeża kwadratowego', '55'],
-         ['Fade skine', '48'],
-         ['Strzyżenie przedszkolaków ', '36'],
+         ['Strzyżenie boków ', '35'],
+         ['Strzyżenie włosów bez mycia', '45'],
+         ['Strzyżenie włosów z myciem', '50'],
+         ['Strzyżenie jeża kwadratowego', '60'],
+         ['Fade skine', '53'],
+         ['Strzyżenie przedszkolaków ', '40'],
          ['Strzyżenie wąsów', '10'],
-         ['Strzyżenie brody', '15 - 40'],
-         ['Odsiwianie włosów ', '80 - 95'],
+         ['Strzyżenie brody', '20-50'],
+         ['Odsiwianie włosów', '115'],
          ['Modelowanie włosów z myciem', '30'],
+
 
       ],
       'Damski': [
-         ['Modelowanie włosów', '45 - 70'],
-         ['Strzyżenie włosów z modelowaniem', '65 - 90'],
-         ['Strzyżenie dzieci', '45 - 55'],
-         ['Strzyżenie grzywki', '10 - 20'],
-         ['Upięcie lub fryzura wieczorowa', '60 - 190'],
-         ['Fryzura ślubna', '120 - 250'],
-         ['Farbowanie włosów 1 kolor', '150 - 250'],
-         ['Kreatywne farbowanie włosów ', '180 - 280'],
-         ['Balejaż', '170 - 330'],
-         ['Ombre / sombrer', '160 - 280'],
-         ['Trwały skręt włosów', '160 - 280'],
-         ['Sauna regenerująca / nawilżająca włosy', '30 - 50'],
-         ['Zabieg regenerujący / odżywczy włosy', '30 - 80'],
-         ['Botox na włosy', '70 - 200'],
-         ['Laminacja włosów', '50 - 150'],
-         ['Keratyna CocoChoco ', '200 - 450'],
-         ['Strzyżenie po zabiegach chemicznych', '20'],
-         ['Przedłużanie / zagęszczanie włosów monofibra 1 pasemko ', '10 - 15'],
+         ['Modelowanie włosów', '55-80'],
+         ['Strzyżenie włosów z modelowaniem', '80-100'],
+         ['Strzyżenie dzieci', '45-70'],
+         ['Strzyżenie grzywki', '10-20'],
+         ['Upięcie lub fryzura wieczorowa', '70-200'],
+         ['Fryzura ślubna', '120-250'],
+         ['Farbowanie włosów 1 kolor', '170-270'],
+         ['Kreatywne farbowanie włosów ', '200-350'],
+         ['Balejaż ', '190-350'],
+         ['Ombre/sombrer', '180-350'],
+         ['Trwały skręt włosów', '180-280'],
+         ['Sauna regenerująca / nawilżająca włosy', '30-50'],
+         ['Zabieg regenerujący / odżywczy włosy', '30-80'],
+         ['Botox na włosy', ' 70-200'],
+         ['Laminacja włosów', ' 50-150'],
+         ['Keratyna CocoChoco ', '200-450'],
+         ['Strzyżenie po zabiegach chemicznych ', '20'],
+         ['Przedłużanie / zagęszczanie włosów monofibra 1 pasemko', '10-15'],
+
 
       ],
       'Pielęgnacja dłoni i stóp': [
-         ['Manicure klasyczny z malowaniem', '45'],
-         ['Manicure hybrydowy', '70-80'],
-         ['Malowanie paznokci ', '20'],
-         ['Pedicure klasyczny lub frezarkowy ', '55-80'],
-         ['Pedicure hybrydowy', '90-110'],
+         ['Manicure klasyczny z malowaniem', '50'],
+         ['Manicure hybrydowy', '85'],
+         ['Malowanie paznokci ', '25'],
+         ['Pedicure klasyczny lub frezarkowy ', '70-80'],
+         ['Pedicure hybrydowy', '110'],
          ['Zdjęcie hybrydy', '30-40'],
          ['Przedłużanie paznokci żelem', '100-150'],
          ['Regeneracja dłoni ciepłą parafiną', '40'],
          ['Regeneracja paznokci IBX system', '25-35'],
 
+
       ],
       'Kosmetyka': [
-         ['Henna na rzęsy', '25'],
-         ['Henna na brwi', '15'],
-         ['Regulacja pęsetą', '10 - 20'],
-         ['Depilacja woskiem', ''],
-         ['Brwi regulacja ', '25 - 40'],
+         ['Henna na rzęsy', '30'],
+         ['Henna na brwi', '20'],
+         ['Regulacja pęsetą', '10-20'],
+         ['...DEPILACJA WOSKIEM...', ''],
+         ['Brwi regulacja ', '30-40'],
          ['Wąsik', '20'],
-         ['Twarz', '50'],
-         ['Pachy', '35 '],
-         ['Przedramiona  ', '30 - 60 '],
-         ['Łydki', '45'],
+         ['Twarz ', '50'],
+         ['Pachy ', '40'],
+         ['Przedramiona', '30-60'],
+         ['Łydki ', '50 '],
          ['Uda', '50'],
-         ['Całe nogi ', '90'],
-         ['Bikini', '40 - 90'],
-         ['Tors / plecy ', '70 - 100'],
+         ['Całe nogi', '90'],
+         ['Bikini ', '40-90'],
+         ['Tors/ plecy', '70-100'],
 
       ],
       'Solarium': [
-         ['1 minuta', '1.90'],
-         ['Karnet 100 minut', '160'],
+         ['1 minuta', '2.40'],
+         ['Karnet 100 minut', '210'],
       ],
    };
 
@@ -93,13 +96,23 @@ const setUpCennik = (() => {
       cennik.innerHTML = ''
       if (keys.indexOf(decodeURI(capitalizeFirstLetter(window.location.hash.slice(1)))) != -1) {
          data[decodeURI(capitalizeFirstLetter(window.location.hash.slice(1)))].forEach(zestaw => {
-            cennik.innerHTML += `
+            if (zestaw[0] == '...DEPILACJA WOSKIEM...') {
+
+               cennik.innerHTML += `
+               <li class="flex justify-between">
+               <span class="p-5">${zestaw[0]}</span>
+                  </li>`
+
+            } else {
+
+               cennik.innerHTML += `
                <li class="flex justify-between">
                <span>${zestaw[0]}</span>
                <span class="text-right">
                   ${zestaw[1]} PLN
-               </span>
-            </li>`
+                  </span>
+                  </li>`
+            }
          })
       } else {
          data.Męski.forEach(zestaw => {

@@ -66,7 +66,7 @@ const setUpCennik = (() => {
          ['Uda', '50'],
          ['Całe nogi', '90'],
          ['Bikini ', '40-90'],
-         ['Tors/ plecy', '70-100'],
+         ['Tors / plecy', '70-100'],
 
       ],
       'Solarium': [

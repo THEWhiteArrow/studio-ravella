@@ -9,7 +9,6 @@ const setUpCennik = (() => {
          ['Strzyżenie włosów z myciem', '55'],
          ['Strzyżenie jeża kwadratowego', '65'],
          ['Użycie golarki przy goleniu', '5'],
-         ['Fade skine', '53'],
          ['Strzyżenie przedszkolaków ', '45'],
          ['Strzyżenie wąsów', '10'],
          ['Strzyżenie brody', '20-50'],

@@ -1,221 +1,217 @@
 <!DOCTYPE html>
 <html lang="pl">
 
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="icon" type="image/png" href="/public/assets/img/logo.jpg">
-   <title>Cennik | Studio Ravella</title>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" href="/public/assets/img/logo.jpg">
+      <title>Cennik | Studio Ravella</title>
 
+      <meta name="description"
+         content="Cennik firmy Ravella.pl. Zobacz i porównaj ceny różnych zabiegów oraz sprawdź z czego chcesz skorzystać w naszym studiu. Gorąco polecamy nasze promocje!">
 
-   <meta name="description"
-      content="Cennik firmy Ravella.pl. Zobacz i porównaj ceny różnych zabiegów oraz sprawdź z czego chcesz skorzystać w naszym studiu. Gorąco polecamy nasze promocje!">
+      <meta name="keywords"
+         content="Galeria studia ravella, zdjęcia Ravella, studio kosmetyczne, fryzjerstwo Ravella.pl , zdjecia studia">
 
-   <meta name="keywords"
-      content="Galeria studia ravella, zdjęcia Ravella, studio kosmetyczne, fryzjerstwo Ravella.pl , zdjecia studia">
+      <link rel="stylesheet" href="/public/stylesheets/tailwind.css">
+      <link rel="stylesheet" href="/public/stylesheets/app.css">
+   </head>
 
+   <body
+      class="bg-black-700 border-body border-red-600 flex flex-col slim-scrollbar">
 
+      <nav class="bg-black-1000 py-4 border-body border-red-600">
+         <div class="container mx-auto  flex flex-row">
 
+            <div class="text-2xl my-auto flex flex-1">
+               <a class="brand-link flex-1 text-gray-200 hover:text-gray-50"
+                  href="/">
+                  <img src="./public/assets/img/logo_bez_tla.png" class="h-full"
+                     alt="logo text">
+               </a>
 
-   <link rel="stylesheet" href="/public/stylesheets/tailwind.css">
-   <link rel="stylesheet" href="/public/stylesheets/app.css">
-</head>
-
-<body class="bg-black-700 border-body border-red-600 flex flex-col slim-scrollbar">
-
-
-   <nav class="bg-black-1000 py-4 border-body border-red-600">
-      <div class="container mx-auto  flex flex-row">
-
-
-         <div class="text-2xl my-auto flex flex-1">
-            <a class="brand-link flex-1 text-gray-200 hover:text-gray-50" href="/">
-               <img src="./public/assets/img/logo_bez_tla.png" class="h-full" alt="logo text">
-            </a>
-
-            <button id="nav-toggler" class="block md:hidden">
-               <div class="transform-gpu transition-transform m-1 w-8 h-1 bg-black-600 rounded"></div>
-               <div class="transform-gpu transition-transform m-1 w-8 h-1 bg-black-600 rounded"></div>
-               <div class="transform-gpu transition-transform m-1 w-8 h-1 bg-black-600 rounded"></div>
-            </button>
-         </div>
-
-         <div
-            class="nav-toggable-hidden absolute md:relative md:h-auto md:w-auto inset-0 bg-black-1000 h-screen w-40 transform-gpu transition-all text-lg"
-            id="nav-toggable">
-
-
-            <ul class="px-3 md:px-0  flex flex-col md:flex-row h-full">
-
-               <li class="p-2 pt-16 pb-8 md:hidden flex text-gray-100  text-2xl">
-                  MENU
-               </li>
-
-               <li class="rounded p-2 flex text-gray-200 hover:text-gray-100 ">
-                  <a class="flex-1 h-full flex items-center" href="/#kontakt">
-                     Kontakt
-                  </a>
-               </li>
-               <li class="rounded p-2 flex text-gray-200 hover:text-gray-100 ">
-                  <a class="flex-1 h-full flex items-center" href="/cennik.html">
-                     Cennik
-                  </a>
-               </li>
-               <li class="rounded p-2 flex text-gray-200 hover:text-gray-100 ">
-                  <a class="flex-1 h-full flex items-center" href="/#o-nas">
-                     O nas
-                  </a>
-               </li>
-               <li class="rounded p-2 flex text-gray-200 hover:text-gray-100 ">
-                  <a class="flex-1 h-full flex items-center" href="/galeria-studio.html">
-                     Galeria
-                  </a>
-               </li>
-            </ul>
-
-         </div>
-
-      </div>
-   </nav>
-
-   <div class="navbarSpaceFiller"></div>
-
-
-   <main class="flex-1">
-
-      <section class="pt-32 relative">
-         <h1 class="container mb-10 text-shadow text-gray-100 font-black text-8xl">Cennik</h1>
-
-         <!-- <img src="./public/assets/svg/undraw_wallet_aym5.svg" alt=""
-            class="  opacity-50 w-24 md:w-48  absolute top-0 mt-28 left-3/4"> -->
-
-         <div class="container flex flex-col bg-black-800">
-
-            <div id="zakladki-container"
-               class=" flex flex-col lg:flex-row rounded pt-4 px-5 border-b-2 border-gray-700">
-
+               <button id="nav-toggler" class="block md:hidden">
+                  <div
+                     class="transform-gpu transition-transform m-1 w-8 h-1 bg-black-600 rounded"></div>
+                  <div
+                     class="transform-gpu transition-transform m-1 w-8 h-1 bg-black-600 rounded"></div>
+                  <div
+                     class="transform-gpu transition-transform m-1 w-8 h-1 bg-black-600 rounded"></div>
+               </button>
             </div>
 
+            <div
+               class="nav-toggable-hidden absolute md:relative md:h-auto md:w-auto inset-0 bg-black-1000 h-screen w-40 transform-gpu transition-all text-lg"
+               id="nav-toggable">
 
-         </div>
-      </section>
+               <ul class="px-3 md:px-0  flex flex-col md:flex-row h-full">
 
-      <section id="cennik" class="bg-black-800">
-         <ul class=" py-16 container text-gray-100">
-
-
-         </ul>
-      </section>
-
-
-
-
-
-   </main>
-
-
-
-
-   <footer class="footer-1 bg-black-1000 text-gray-300 py-8 sm:py-12">
-      <div class="container mx-auto px-4">
-         <div class="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
-
-            <div class="mt-10 sm:mt-0 px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
-               <h5 class="text-xl font-bold mb-6">Studio Ravella</h5>
-               <ul class="list-none footer-links">
-                  <li class="mb-2">
-                     <a href="/#o-nas"
-                        class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
-                        O nas</a>
+                  <li
+                     class="p-2 pt-16 pb-8 md:hidden flex text-gray-100  text-2xl">
+                     MENU
                   </li>
-                  <li class="mb-2">
-                     <a href="/#kontakt"
-                        class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
-                        Kontakt</a>
+
+                  <li
+                     class="rounded p-2 flex text-gray-200 hover:text-gray-100 ">
+                     <a class="flex-1 h-full flex items-center" href="/#kontakt">
+                        Kontakt
+                     </a>
                   </li>
-                  <li class="mb-2">
-                     <a href="/cennik.html"
-                        class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
+                  <li
+                     class="rounded p-2 flex text-gray-200 hover:text-gray-100 ">
+                     <a class="flex-1 h-full flex items-center"
+                        href="/cennik.html">
                         Cennik
                      </a>
                   </li>
-                  <li class="mb-2">
-                     <a href="/galeria-studio.html"
-                        class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">Galeria</a>
+                  <li
+                     class="rounded p-2 flex text-gray-200 hover:text-gray-100 ">
+                     <a class="flex-1 h-full flex items-center" href="/#o-nas">
+                        O nas
+                     </a>
                   </li>
-
+                  <li
+                     class="rounded p-2 flex text-gray-200 hover:text-gray-100 ">
+                     <a class="flex-1 h-full flex items-center"
+                        href="/galeria-studio.html">
+                        Galeria
+                     </a>
+                  </li>
                </ul>
+
             </div>
-
-
-            <div class="mt-10 sm:mt-0 px-4 sm:w-1/2 md:w-1/4 xl:w-1/6  md:mt-0">
-               <h5 class="text-xl font-bold mb-6">Galeria</h5>
-               <ul class="list-none footer-links">
-
-                  <li class="mb-2">
-                     <a href="/galeria-studio.html"
-                        class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">Nasze
-                        studio</a>
-                  </li>
-                  <li class="mb-2">
-                     <a href="/galeria-prace.html"
-                        class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">Nasze
-                        prace</a>
-                  </li>
-
-
-               </ul>
-            </div>
-
-            <div class="mt-10 md:mt-0 px-4 sm:w-full md:w-2/4 xl:w-4/6  md:mt-0">
-               <h5 class="text-xl font-bold mb-6">Kontakt</h5>
-               <ul class="list-none">
-                  <li class="mb-2 flex flex-col lg:flex-row">
-                     <span>Lokalizacja :&nbsp;</span>
-                     <a href="https://g.page/StudioUrodyRavella?share" target="_blank"
-                        class="flex flex-wrap border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
-                        Patriotów 162 , 04-839 Warszawa Radość</a>
-
-                  </li>
-                  <li class="mb-2 flex flex-col lg:flex-row">
-                     <span>Telefon :&nbsp;</span>
-                     <a href="tel:+48226153401"
-                        class="flex flex-wrap border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
-                        +48 22 615 34 01</a>
-                     <span class="mx-2 hidden lg:flex">,</span>
-                     <a href="tel:+48226155706"
-                        class="flex flex-wrap border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
-                        +48 22 615 57 06</a>
-                  </li>
-                  <li class="mb-2 flex flex-col lg:flex-row">
-                     <span>Mail :&nbsp;</span>
-                     <a href="mailto:ania.mamrowicz@ravella.pl"
-                        class="flex flex-wrap border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
-                        <span>ania.mamrowicz@ravella.pl</a></span>
-                  </li>
-
-
-               </ul>
-            </div>
-
 
          </div>
+      </nav>
 
-         <div class="mt-6 flex flex-col md:flex-row items-end justify-center  md:justify-end md:items-center border-t">
-            <span>
-               &copy; 2021 Damian Trafiałek
-            </span>
-            <a href="mailto:damian.trafialek@gmail.com"
-               class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300 mx-2">damian.trafialek@gmail.com</a>
-         </div>
-   </footer>
+      <div class="navbarSpaceFiller"></div>
 
+      <main class="flex-1">
 
-   <script src="/public/javascripts/modules/cennik.js"></script>
-   <script src="/public/javascripts/modules/navbar.js"></script>
-   <script src="public/javascripts/cennik.js"></script>
+         <section class="pt-32 relative">
+            <h1
+               class="container mb-10 text-shadow text-gray-100 font-black text-8xl">Cennik</h1>
 
-</body>
+            <!-- <img src="./public/assets/svg/undraw_wallet_aym5.svg" alt=""
+            class="  opacity-50 w-24 md:w-48  absolute top-0 mt-28 left-3/4"> -->
 
-</html>
+            <div class="container flex flex-col bg-black-800">
+
+               <div id="zakladki-container"
+                  class=" flex flex-col lg:flex-row rounded pt-4 px-5 border-b-2 border-gray-700">
+
+               </div>
+
+            </div>
+         </section>
+
+         <section id="cennik" class="bg-black-800">
+            <ul class=" py-16 container text-gray-100">
+
+            </ul>
+         </section>
+
+      </main>
+
+      <footer class="footer-1 bg-black-1000 text-gray-300 py-8 sm:py-12">
+         <div class="container mx-auto px-4">
+            <div class="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
+
+               <div class="mt-10 sm:mt-0 px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
+                  <h5 class="text-xl font-bold mb-6">Studio Ravella</h5>
+                  <ul class="list-none footer-links">
+                     <li class="mb-2">
+                        <a href="/#o-nas"
+                           class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
+                           O nas</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="/#kontakt"
+                           class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
+                           Kontakt</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="/cennik.html"
+                           class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
+                           Cennik
+                        </a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="/galeria-studio.html"
+                           class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">Galeria</a>
+                     </li>
+
+                  </ul>
+               </div>
+
+               <div
+                  class="mt-10 sm:mt-0 px-4 sm:w-1/2 md:w-1/4 xl:w-1/6  md:mt-0">
+                  <h5 class="text-xl font-bold mb-6">Galeria</h5>
+                  <ul class="list-none footer-links">
+
+                     <li class="mb-2">
+                        <a href="/galeria-studio.html"
+                           class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">Nasze
+                           studio</a>
+                     </li>
+                     <li class="mb-2">
+                        <a href="/galeria-prace.html"
+                           class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">Nasze
+                           prace</a>
+                     </li>
+
+                  </ul>
+               </div>
+
+               <div
+                  class="mt-10 md:mt-0 px-4 sm:w-full md:w-2/4 xl:w-4/6  md:mt-0">
+                  <h5 class="text-xl font-bold mb-6">Kontakt</h5>
+                  <ul class="list-none">
+                     <li class="mb-2 flex flex-col lg:flex-row">
+                        <span>Lokalizacja :&nbsp;</span>
+                        <a href="https://g.page/StudioUrodyRavella?share"
+                           target="_blank"
+                           class="flex flex-wrap border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
+                           Patriotów 162 , 04-839 Warszawa Radość</a>
+
+                     </li>
+                     <li class="mb-2 flex flex-col lg:flex-row">
+                        <span>Telefon :&nbsp;</span>
+                        <a href="tel:+48226153401"
+                           class="flex flex-wrap border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
+                           +48 22 615 34 01</a>
+                        <span class="mx-2 hidden lg:flex">,</span>
+                        <a href="tel:+48226155706"
+                           class="flex flex-wrap border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
+                           +48 22 615 57 06</a>
+                     </li>
+                     <li class="mb-2 flex flex-col lg:flex-row">
+                        <span>Mail :&nbsp;</span>
+                        <a href="mailto:ania.mamrowicz@ravella.pl"
+                           class="flex flex-wrap border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300">
+                           <span>ania.mamrowicz@ravella.pl</a></span>
+                     </li>
+
+                  </ul>
+               </div>
+
+            </div>
+
+            <div
+               class="mt-6 flex flex-col md:flex-row items-end justify-center  md:justify-end md:items-center border-t">
+               <span>
+                  &copy; 2023 Damian Trafiałek
+               </span>
+               <a href="mailto:damian.trafialek@gmail.com"
+                  class="border-b border-solid border-transparent hover:border-red-500 hover:text-gray-300 mx-2">damian.trafialek@gmail.com</a>
+            </div>
+         </footer>
+
+         <script src="/public/javascripts/modules/cennik.js"></script>
+         <script src="/public/javascripts/modules/navbar.js"></script>
+         <script src="public/javascripts/cennik.js"></script>
+
+      </body>
+
+   </html>

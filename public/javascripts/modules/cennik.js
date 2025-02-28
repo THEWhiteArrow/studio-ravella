@@ -49,12 +49,12 @@ const setUpCennik = (() => {
 			["Regulacja pęsetą", "10-20"],
 		],
 		Solarium: [
-			["1 minuta", "3"],
-			["Karnet 100 minut", "270"],
+			["1 minuta", "3.5"],
+			["Karnet 100 minut", "300"],
 		],
 		"Depilacja woskiem": [
 			["Brwi regulacja", "30-40"],
-			["Wąsik", "20 -30"],
+			["Wąsik", "20-30"],
 		],
 	};
 
